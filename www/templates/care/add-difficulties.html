@@ -1,0 +1,42 @@
+<ion-view title="{{entryMode == 'New' && 'ADD' || 'EDIT'}} Difficulty">
+  <ion-content class="has-header has-subheader has-footer">
+    <ion-item class="item-icon-left" ng-show="entryMode=='Change'">
+      Difficulty: {{currentEntry.title}}
+      <i class="icon ion-chevron-left icon-accessory"></i>
+    </ion-item>
+    <ion-item class="item-icon-left" ui-sref="app.care.select-difficulty" ng-show="entryMode=='New'">
+      Difficulty: {{currentEntry.title}}
+      <i class="icon ion-chevron-left icon-accessory"></i>
+    </ion-item>
+    <div class="list padding-vertical">
+      <div class="item item-divider pp-item-divider">
+        Notes
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <textarea rows="3" placeholder="Ihre Notiz" ng-model="currentEntry.notes" ng-change="enableSave()"></textarea>
+        </label>
+      </div>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+      <div class="button-bar">
+        <button class="button button-clear icon ion-checkmark" ng-disabled="!allowSave"  ng-click="save(currentEntry)"> Speichern</button>
+        <button class="button button-clear icon ion-close-circled" ui-sref="app.care.difficulties"> Abbrechen</button>
+      </div>
+  </div>
+</ion-view>
+
+<script id="modal.care.error.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Form error</h1>
+      <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+		<ion-content>
+      <div class="padding">
+		    <p ng-repeat="error in formerrors"> {{ error | translate}}</p>
+      </div>
+		</ion-content>
+  </ion-modal-view>
+</script>

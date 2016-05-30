@@ -1,0 +1,24 @@
+<ion-view title="{{category.title}}">
+  <ion-content class="has-header">
+    <div class="padding">
+      <h4 class="title">Alle Aktivitäten im Bereich {{category.title}}</h4>
+      <div ng-show="!category.activities">
+        <p>In diesem Bereich sind noch keine Aktivitäten hinterlegt.</p>
+      </div>
+    </div>
+    <div class="category-start">
+      <div class="padding">
+        <h2 class="category-headline">Körperpflege</h2>
+        <button class="button" ui-sref="app.care.activities">Alle Aktivitäten</button>
+      </div>
+    </div>
+    <div class="padding">
+      <p>Zur Körperpflege gehören alle Aktivitäten der persönlichen Körperhygiene, der Zahnpflege, der Haarpflege, des Rasierens und der Blasen- und Darmentleerung. Hierzu zählen beispielsweise die Ganzkörperwäsche oder das Baden, das Zähne putzen oder das Reinigen des Zahnersatzes, das Haare waschen und die Intimpflege.</p>
+    </div>
+    <ion-list>
+      <ion-item menu-close ng-repeat="activity in category.activities | orderByPriority" href="#" ui-sref="app.care.activities({activityId: activity.$id})">
+        {{activity.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

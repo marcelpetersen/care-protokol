@@ -1,0 +1,124 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content ng-controller="NavCtrl">
+    <ion-nav-bar class="bar-royal nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-buttons side="left">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-icon icon ion-home" nav-clear menu-close href="#" ui-sref="app.home"></button>
+    </ion-nav-buttons>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">{{ auth.user.email }}</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item class="item-divider icon item-icon-left pp-item-divider">
+          <i class="icon ion-clipboard"></i>
+          {{'APP_PROTOCOL' | translate}}
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.user" nav-clear menu-close href="#" ui-sref="app.care.dashboard">
+          Übersicht
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.user" nav-clear menu-close href="#" ui-sref="app.care.timeline">
+          Verlauf
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.user" nav-clear menu-close href="#" ui-sref="app.care.categories">
+          Kategorien
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.user" nav-clear menu-close href="#" ui-sref="app.care.favorites">
+          Ihre Favoriten
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.home">
+          Zuletzt genutzt
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-divider icon item-icon-left pp-item-divider">
+          <i class="icon ion-compose"></i>
+          Weitere Unterlagen
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.competency.dashboard">
+          {{ 'NAV_COMPETENCY' | translate }}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.home">
+          {{ 'NAV_APPLIANCES' | translate }}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.medication.dashboard">
+          {{ 'NAV_MEDICATION' | translate }}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.tip.dashboard">
+          {{ 'NAV_TIPPS' | translate }}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.admin" nav-clear menu-close href="#" ui-sref="app.printout.dashboard">
+          {{ 'NAV_PRINTOUT' | translate }}
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-divider icon item-icon-left pp-item-divider">
+          <i class="icon ion-gear-a"></i>
+          Einstellungen
+        </ion-item>
+        <ion-item ng-show-auth class="item-icon-right" nav-clear menu-close href="#" ui-sref="app.account.dashboard">
+          Ihr Nutzerprofil
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item>
+          <div class="button-bar button-full bar-stable" ng-controller="LanguageCtrl">
+            <a class="button button-small" ng-click="changeLanguage('de')" ng-class="{active: isCurrentLanguage('de')}"><img src="img/de.png"/></a>
+            <a class="button button-small" ng-click="changeLanguage('en')" ng-class="{active: isCurrentLanguage('en')}"><img src="img/us.png"/></a>
+            <a class="button button-small" ng-click="changeLanguage('pl')" ng-class="{active: isCurrentLanguage('pl')}"><img src="img/pl.png"/></a>
+            <a class="button button-small" ng-click="changeLanguage('ru')" ng-class="{active: isCurrentLanguage('ru')}"><img src="img/ru.png"/></a>
+          </div>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.user" nav-clear menu-close href="#" ui-sref="app.family.reward">
+          Reward
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" access-level="accessLevels.admin" nav-clear menu-close href="#" ui-sref="app.admin.dashboard">
+          ADMIN Section
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right" ng-controller="CoachCoachingCtrl">
+        <header class="bar bar-header bar-calm">
+            <h1 class="title">Lernprogramm</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+              <ion-item class="item-divider icon item-icon-left pp-item-divider">
+                <i class="icon ion-person"></i>
+                Ihre Themen
+              </ion-item>
+              <ion-item nav-clear menu-close href="#" ui-sref="app.coach.coaching({coachingId: coaching.$id})">
+                Umgang mit Demenz
+              </ion-item>
+              <ion-item class="item-divider icon item-icon-left pp-item-divider">
+                <i class="icon ion-arrow-right-a"></i>
+                Weitere Themen
+              </ion-item>
+              <ion-item nav-clear menu-close href="#">
+                Sturzprävention
+              </ion-item>
+              <ion-item nav-clear menu-close href="#">
+                Sicher pflegen
+              </ion-item>
+            </ion-list>
+        </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

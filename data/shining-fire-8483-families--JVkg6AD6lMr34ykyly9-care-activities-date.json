@@ -1,0 +1,567 @@
+{
+  "2014-09-08" : {
+    "-JX8EVN6mMXlnsI6j9lr" : {
+      "activityId" : "eatbitesize",
+      "activityTitle" : "Mundgerechte Zubereitung",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "87",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    "-JX8GsU9OkIWNZ4YxOBc" : {
+      "activityId" : "wheelchair",
+      "activityTitle" : "Rollstuhl (Aufstehen/Hineinsetzen)",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "28",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5898854E12
+  },
+  "2014-09-10" : {
+    "-JX8EbGcEdiuHbhHB3cx" : {
+      "activityId" : "cooking",
+      "activityTitle" : "Kochen",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "22",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5897126E12
+  },
+  "2014-09-11" : {
+    "-JWzpF_vryThmY7CMSQR" : {
+      "activityId" : "cleaning",
+      "activityTitle" : "Wohnung reinigen",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "14",
+      "note" : "last thursday",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-JX-CBHFwDQZgDPetjq8" : {
+      "activityId" : "movehouse",
+      "activityTitle" : "Bewegen im Haus",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : "60",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    "-JX-Cg-dB0yph7S32-M8" : {
+      "activityId" : "eatassist",
+      "activityTitle" : "Essen und Trinken reichen",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "39",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    "-JX1_SVPGeXds_kkQlbB" : {
+      "activityId" : "eatassist",
+      "activityTitle" : "Essen und Trinken reichen",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "20",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5896262E12
+  },
+  "2014-09-12" : {
+    "-JX8Dun8uTnmYeVr2ToJ" : {
+      "activityId" : "stairclimbing",
+      "activityTitle" : "Treppensteigen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "19",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5895398E12
+  },
+  "2014-09-13" : {
+    "-JX8EsQVqqPeguyG6_FM" : {
+      "activityId" : "washiron",
+      "activityTitle" : "Waschen und Bügeln",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "27",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5894534E12
+  },
+  "2014-09-15" : {
+    "-JXCNgtDzn49niFMghWs" : {
+      "activityId" : "washfull",
+      "activityTitle" : "Ganzkörperwäsche",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "8",
+      "note" : "3",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5892806E12
+  },
+  "2014-09-17" : {
+    "-JX1aB19aDr-B29J4prn" : {
+      "activityId" : "dressing",
+      "activityTitle" : "An- und Auskleiden",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "midday",
+      "hours" : 1,
+      "minutes" : "55",
+      "note" : "note from FB3",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.589059693937E12
+  },
+  "2014-09-19" : {
+    "-JX8Gxsw_BGqwZPwBecN" : {
+      "activityId" : "washup",
+      "activityTitle" : "Spülen",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "evening",
+      "hours" : "",
+      "minutes" : "29",
+      "note" : "test",
+      "type" : "support",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.588877030637E12
+  },
+  "2014-10-07" : {
+    ".priority" : 8.5873798E12
+  },
+  "2014-10-08" : {
+    "-JYj_eOJunjFK679-eaU" : {
+      "activityId" : "washiron",
+      "activityTitle" : "Waschen und Bügeln",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "30",
+      "note" : "",
+      "type" : "support",
+      "user" : "simplelogin:5"
+    },
+    "-JYj_mFjZ2Z7A__rrBM_" : {
+      "activityId" : "eatbitesize",
+      "activityTitle" : "Mundgerechte Zubereitung",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "31",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-JYjaLYlAztV2Gx_vBmV" : {
+      "activityId" : "bedgoto",
+      "activityTitle" : "Zubettgehen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "27",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-JYvOOvrmMbgoADSLVuR" : {
+      "activityId" : "bedgoto",
+      "activityTitle" : "Zubettgehen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : 20,
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5872934E12
+  },
+  "2014-10-09" : {
+    "-JYvPIqf7c42WcArMd66" : {
+      "activityId" : "wheelchair",
+      "activityTitle" : "Rollstuhl (Aufstehen/Hineinsetzen)",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : "13",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.587207E12
+  },
+  "2014-10-10" : {
+    ".priority" : 8.5871206E12
+  },
+  "2014-10-11" : {
+    "-JYvM_pGCu9mxmEeAqir" : {
+      "activityId" : "standing",
+      "activityTitle" : "Stehen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "40",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-JYvMsn5sSGtXFcQfxlo" : {
+      "activityId" : "eatassist",
+      "activityTitle" : "Essen und Trinken reichen",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : 33,
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.587032836155E12
+  },
+  "2014-10-14" : {
+    ".priority" : 8.586775E12
+  },
+  "2014-10-18" : {
+    "-JZXmoQXqd3INxYmKOm1" : {
+      "activityId" : "urination",
+      "activityTitle" : "Blasenentleerung",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "60",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-JZqbdqlcwC4vAp52d12" : {
+      "activityId" : "movehouse",
+      "activityTitle" : "Bewegen im Haus",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : 0,
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-JZqc-Nm5cdd5QWRzrIO" : {
+      "activityId" : "dentalcare",
+      "activityTitle" : "Mund-/Zahnpflege",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "36",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-JZqepbgu3kMRWQzS0Fq" : {
+      "activityId" : "accompany",
+      "activityTitle" : "Begleitung (z. B. zum Arzt)",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "20",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    "-JZrANXuhVUpuQfCVx5G" : {
+      "activityId" : "washfull",
+      "activityTitle" : "Ganzkörperwäsche",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "26",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-JZrARFgmONjVTSNRji-" : {
+      "activityId" : "position",
+      "activityTitle" : "Lagerung",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "21",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    "-JZrATil5Xo3DNLOBVM5" : {
+      "activityId" : "urination",
+      "activityTitle" : "Blasenentleerung",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "evening",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "34",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5864294E12
+  },
+  "2014-10-27" : {
+    "-J_CtrGB0qOQwug3VDfN" : {
+      "activityId" : "eatassist",
+      "activityTitle" : "Essen und Trinken reichen",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "23",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_CtxdE15buNYWq4Erf" : {
+      "activityId" : "bath",
+      "activityTitle" : "Baden",
+      "categoryId" : "body",
+      "categoryTitle" : "Personal Hygiene",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "35",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_Cu238TqsZLUzJx4C5" : {
+      "activityId" : "cooking",
+      "activityTitle" : "Kochen",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "27",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-J_Cu5dmx00LRZjPri0H" : {
+      "activityId" : "eatbitesize",
+      "activityTitle" : "Mundgerechte Zubereitung",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : "28",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_Cu8oGYACcxarO1cYp" : {
+      "activityId" : "bedgoto",
+      "activityTitle" : "Zubettgehen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobility",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "22",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuC4SGRkQjJN7pWel" : {
+      "activityId" : "dentalcare",
+      "activityTitle" : "Mund-/Zahnpflege",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "7",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuFvOzRtk4chlRCG2" : {
+      "activityId" : "stairclimbing",
+      "activityTitle" : "Treppensteigen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobility",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "31",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuKaW_lTUAB47-Ig-" : {
+      "activityId" : "urination",
+      "activityTitle" : "Blasenentleerung",
+      "categoryId" : "body",
+      "categoryTitle" : "Personal Hygiene",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "26",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuN0MxXRmusuTc1f1" : {
+      "activityId" : "beddingchange",
+      "activityTitle" : "Wechsel der Wäsche",
+      "categoryId" : "household",
+      "categoryTitle" : "Household",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "33",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuQnaReaUvdfTZhwH" : {
+      "activityId" : "incontinencechange",
+      "activityTitle" : "Inkontinenzartikel wechseln",
+      "categoryId" : "body",
+      "categoryTitle" : "Personal Hygiene",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : "48",
+      "note" : "",
+      "type" : "partial",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuUmRXW5AgrpAlTHB" : {
+      "activityId" : "shower",
+      "activityTitle" : "Duschen",
+      "categoryId" : "body",
+      "categoryTitle" : "Personal Hygiene",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "17",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuXsL75w3rqzMwK2g" : {
+      "activityId" : "beddingchange",
+      "activityTitle" : "Wechsel der Wäsche",
+      "categoryId" : "household",
+      "categoryTitle" : "Household",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "33",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-J_CuaE_41OsLaigEXrV" : {
+      "activityId" : "bedgoto",
+      "activityTitle" : "Zubettgehen",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "night",
+      "hours" : 0,
+      "minutes" : "51",
+      "note" : "",
+      "type" : "full",
+      "user" : "simplelogin:5"
+    },
+    "-J_CueCxpkYbbZF4JbAi" : {
+     "activityId" : "eatbitesize",
+      "activityTitle" : "Mundgerechte Zubereitung",
+      "categoryId" : "nutrition",
+      "categoryTitle" : "Ernährung",
+      "dayslice" : "midday",
+      "hours" : 0,
+      "minutes" : "36",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    "-J_CughQNM5yTWmCMmPC" : {
+      "activityId" : "accompany",
+      "activityTitle" : "Begleitung (z. B. zum Arzt)",
+      "categoryId" : "mobility",
+      "categoryTitle" : "Mobilität",
+      "dayslice" : "evening",
+      "hours" : 0,
+      "minutes" : "34",
+      "note" : "",
+      "type" : "",
+      "user" : "simplelogin:5"
+    },
+    "-J_Culds--px50uh9Zr6" : {
+      "activityId" : "cooking",
+      "activityTitle" : "Kochen",
+      "categoryId" : "household",
+      "categoryTitle" : "Haushalt",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "34",
+      "note" : "",
+      "type" : "oversee",
+      "user" : "simplelogin:5"
+    },
+    "-J_CupFkVy9VLLpFx5DT" : {
+      "activityId" : "washfull",
+      "activityTitle" : "Ganzkörperwäsche",
+      "categoryId" : "body",
+      "categoryTitle" : "Körperpflege",
+      "dayslice" : "morning",
+      "hours" : 0,
+      "minutes" : "20",
+      "note" : "",
+      "type" : "coach",
+      "user" : "simplelogin:5"
+    },
+    ".priority" : 8.5856487743E12
+  }
+}

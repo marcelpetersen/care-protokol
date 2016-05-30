@@ -1,0 +1,82 @@
+<ion-view title="{{'APP_PROTOCOL' | translate}} Verlauf">
+  <div class="bar bar-subheader bar-light item-input-inset">
+    <div class="buttons">
+      <button class="button button-clear" ng-click="setStartDate()"><strong>{{data.startDate | amCalendar}}</strong></button>
+    </div>
+    <div class="title"><i class="button button-clear icon ion-chevron-up" ng-click="scrollToTop()"></i><i class="button button-clear icon pp-icon-2x ion-chevron-down" ng-click="scrollToBottom()"></i></div>
+    <div class="buttons pull-right">
+      <button class="button button-clear" ng-click="setEndDate()"><strong>{{data.endDate | amCalendar}}</strong></button>
+    </div>
+  </div>
+
+
+  <ion-content class="has-header has-footer has-subheader" delegate-handle="timeline">
+
+      <div class="list">
+
+      <div class="my-item"> 
+         <ion-item class="item-divider pp-item-divider text-center" style="height: 40px">Category Stats</ion-item>
+         <div ng-repeat="(appCareCategoryId, appCareCategory) in appCareCategories">
+             <ion-item class="my-item item-icon-right pp-item-flag-left pp-item-badge-right">
+               {{appCareCategory.title}}
+               <span class="badge badge-stable">{{getCatMinsTimelineStat(appCareCategory.$id)}}</span>
+               <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+          </div>
+        </div>
+        </div>
+      <div class="list">
+
+      <div class="my-item"> 
+         <ion-item class="item-divider pp-item-divider text-center" style="height: 40px">Activity Stats</ion-item>
+         <div ng-repeat="(appCareActivityId, appCareActivity) in appCareActivities">
+             <ion-item class="my-item item-icon-right pp-item-flag-left pp-item-badge-right">
+               {{appCareActivity.title}}
+               <span class="item-note">{{appCareActivity.category}}</span>
+               <span class="badge badge-stable">{{getActivityMinsTimelineStat(appCareActivity.$id)}}</span>
+               <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+          </div>
+      </div>
+      </div>
+<div class="list">
+        <div class="my-item" collection-repeat="item in data.activities"
+                           collection-item-width="'100%'"
+                           collection-item-height="getItemHeight(item)" ng-style="{height: getItemHeight(item)}">
+          <ion-item id="{{item.$id}}" class="item-divider pp-item-divider text-center" style="height: 40px">{{item.$id | amCalendar}}</ion-item>
+          <div ng-repeat="(activityId, activity) in item">
+             <ion-item class="my-item item-icon-right pp-item-flag-left pp-item-badge-right" href="" ng-click="goToEntryEdit(activityId, activity,item)">
+               {{activity.activity.title}}
+               <span class="pp-flag"></span> <!-- inserty activity.dayslice -->
+               <span class="item-note">Daniel</span> <!-- insert username from activity.user again-->
+               <span class="badge badge-stable">{{activity.minutes}}</span>
+               <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+          </div>
+        </div>
+
+      </div>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button  class="button button-clear icon ion-clipboard" ui-sref="app.care.dashboard"> Übersicht</button>
+      <button  class="button button-clear icon ion-plus" ui-sref="app.care.select-category"> Neuer Eintrag</button>
+    </div>
+  </div>
+</ion-view>
+
+<script id="modal.timeline.error.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Date Error</h1>
+      <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+		<ion-content>
+      <div class="padding">
+		    Start date must be less than End date
+      </div>
+		</ion-content>
+  </ion-modal-view>
+</script>

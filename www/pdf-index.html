@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Tagesprotokoll v2</title>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script src="../tmp/_pdfIonicAppArgs.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/angular/angular.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.js"></script>
+    
+    <!-- vendor libs -->
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/firebase.js"></script>  <!-- 1.0.21 -->
+    <script src="lib/firebase-simple-login-extended.js"></script> <!-- 1.6.3 -->
+    <script src="lib/angularfire.min.js"></script>       <!-- 0.8.2 -->
+    <script src="lib/angular-cookies.min.js"></script> <!-- 1.2.17 -->
+    <script src="lib/moment-with-langs.min.js"></script>
+    <script src="lib/angular-moment.min.js"></script>
+    <script src="lib/linq.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/printoutApp.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/routeConfig.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/service.sections.js"></script>
+    <script src="js/service.login.js"></script>
+    <script src="js/service.users.js"></script>
+    <script src="js/service.reward.js"></script>
+    <script src="js/service.dateselect.js"></script>
+    <script src="js/service.families.js"></script>
+    <script src="js/service.gamification.js"></script>
+    <script src="js/service.firebase.js"></script>
+    <script src="js/service.firebase.changeEmail.js"></script>
+    <script src="js/service.underscore.js"></script>
+    <script src="js/filters.js"></script>
+
+
+  </head>
+
+  <body ng-app="pp.app.printout">
+  <div ng-controller="displayFBDataController">
+
+  <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+              <h1>
+                {{familyname}}
+              </h1>
+            </div>
+            <div class="col-xs-6 text-right">
+              <h1>Pflegeprotokoll</h1>
+              <h1><small>Request Id # {{requestId}}<br>
+              Created: {{request.created}}
+              </small></h1>
+            </div>
+            <hr>
+        <div class="row">
+            <div class="col-xs-5">
+              <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4>Selected timeframe</h4>
+                      </div>
+                      <div class="panel-body">
+                        <p>
+                          Date start: {{request.payload.timeframe.start}} <br>
+                          Date end: {{request.payload.timeframe.end}} <br>
+                        </p>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-xs-5 col-xs-offset-2 text-right">
+              <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4>Selected sections</h4>
+                      </div>
+                      <div class="panel-body">
+                        <p ng-repeat="(key, value)  in request.payload.sections">
+                            {{key}}: {{currentstate(key)}}
+                        </p>
+                      </div>
+                    </div>
+            </div>
+        </div> <!-- / end request details section -->
+
+         <div class="row">
+            <div class="col-sm-12">
+            <h3>Care data</h3>
+              <div ng-repeat="groupByDate in caredata">
+              
+                <div ng-repeat="(dateKey, groupByCatAct) in groupByDate">
+                   <h4>{{dateKey}}</h4>
+
+                  <div ng-repeat="(catKey, groupByAct) in groupByCatAct">
+                    
+                     <table class="table table-bordered">
+                        <thead>
+                          <tr>Hilfebedarf bei der {{catKey}}</tr>
+                          <tr>
+                            <th><h4>Activity</h4></th>
+                            <th><h4>morning</h4></th>
+                            <th><h4>midday</h4></th>
+                            <th><h4>evening</h4></th>
+                            <th><h4>night</h4></th>
+                            <th><h4>Comments</h4></th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="actDetails in groupByAct">
+                            <td>{{actDetails.activityKey}}</td>
+                            <td>
+                              <div ng-repeat="(type, mins) in actDetails.activityDetails | mapTypeReduceDaySlice:'morning'">
+                              {{type}}:{{mins}}
+                              <div>
+                            </td>
+                            <td>
+                              <div ng-repeat="(type, mins) in actDetails.activityDetails | mapTypeReduceDaySlice:'midday'">
+                              {{type}}:{{mins}}
+                              <div>
+                            </td>
+                            <td>
+                              <div ng-repeat="(type, mins) in actDetails.activityDetails | mapTypeReduceDaySlice:'evening'">
+                              {{type}}:{{mins}}
+                              <div>
+                            </td>
+                            <td>
+                              <div ng-repeat="(type, mins) in actDetails.activityDetails | mapTypeReduceDaySlice:'night'">
+                              {{type}}:{{mins}}
+                              <div>
+                            </td>
+                            <td>
+                              <div ng-repeat="activityNode in actDetails.activityDetails">
+                              {{activityNode.$id}}: {{activityNode.note}}
+                              <div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div>
+                    
+                     <table class="table table-bordered">
+                        <thead>
+                          <tr>Zusammenfassung !!</tr>
+                          <tr>
+                            <th><h4>Kategorie</h4></th>
+                            <th><h4>morning</h4></th>
+                            <th><h4>midday</h4></th>
+                            <th><h4>evening</h4></th>
+                            <th><h4>night</h4></th>
+                            <th><h4>Hilfeleistung</h4></th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr ng-repeat="catDataNode in caredGroupByCatdata[dateKey]">
+                            <td>{{catDataNode[0].catKey}}</td>
+                            <td>
+                              {{catDataNode[0].groupByCatData | reduceDaySlice:'morning'}}
+                            </td>
+                            <td>
+                              {{catDataNode[0].groupByCatData | reduceDaySlice:'midday'}}
+                            </td>
+                            <td>
+                              {{catDataNode[0].groupByCatData | reduceDaySlice:'evening'}}
+                            </td>
+                            <td>
+                              {{catDataNode[0].groupByCatData | reduceDaySlice:'night'}}
+                            </td>
+                            <td>
+                              {{catDataNode[0].groupByCatData | reduceToMins}}
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>Hilfeleistung pro Tageszeit</td>
+                              <td>
+                                {{caredGroupByCatdata[dateKey] | reduceDaySlice2:'morning'}}
+                              </td>
+                              <td>
+                                {{caredGroupByCatdata[dateKey] | reduceDaySlice2:'midday'}}
+                              </td>
+                              <td>
+                                {{caredGroupByCatdata[dateKey] | reduceDaySlice2:'evening'}}
+                              </td>
+                              <td>
+                                {{caredGroupByCatdata[dateKey] | reduceDaySlice2:'night'}}
+                              </td>
+                              <td>
+                                {{caredGroupByCatdata[dateKey] | reduceToMins2}}
+                              </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+         </div>
+        </div> <!-- /row -->
+    </div> <!-- /container -->
+    </div>
+  </body>
+</html>

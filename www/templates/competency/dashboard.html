@@ -1,0 +1,27 @@
+<ion-view title="{{ 'NAV_COMPETENCY' | translate }}">
+  <ion-content class="has-header" ng-controller="CompetencyCtrl">
+    <div class="content-pic-start competency">
+    </div>
+    <div class="padding">
+      <h3>Einschränkung der Alltagskompetenz</h3>
+    </div>
+    <div class="row stable-bg">
+      <div class="col col-10"><i class="icon pp-icon-2x ion-information-circled energized"></i></div>
+      <div class="col col-90"><p>Nicht nur körperliche Einschränkungen werden bei einer Pflegestufe berücksichtigt. Manche Menschen benötigen aufgrund von Demenz, geistigen oder psychischen Einschränkungen mehr Unterstützung im Alltag. Es ist wichtig, diese zu protokollieren. Denn die Krankenkasse gibt je nach Schwere bis zu 2400 Euro an zusätzlichen Leistungen im Jahr.</p></div>
+    </div>
+    <h4 class="padding">{{ 'COMPETENCY_INIT_QUESTION' | translate}}</h4>
+    <div ng-show="showDemo">
+      <img src="img/puppy.png" style="width: 80px; float: left;"/>
+      <h4 style="line-height: 25px;">Ups, erwischt! <br>Wir haben für diesen Link im Demo-Modus noch keine Inhalte.</h4>
+    </div>
+    <div class="row responsive-sm">
+      <div class="col col-34"><button ng-click="notAffected()" class="button button-block button-positive pp-button-row">{{ 'COMPETENCY_INIT_BUTTON_DEFINITELY_NOT' | translate }}</button></div>
+      <div class="col col-66"><p><small>Wählen Sie diese Option, wenn Sie sicher sind dass der Pflegebedürftige rein körperlich eingeschränkt ist.</small></p></div>
+    </div>
+    <div class="row responsive-sm">
+      <div class="col col-34"><button class="button button-block button-positive pp-button-row" ui-sref="app.competency.questionnaire">{{ 'COMPETENCY_INIT_BUTTON_EVENTUALLY_YES' | translate }}</button></div>
+      <div class="col col-66"><p><small>Wählen Sie diese Option, wenn Sie die Alltagskompetenzen durchgehen wollen um festzustellen ob eine Einschränkung zutrifft.</small></p></div>
+    </div>
+  </ion-content>
+
+</ion-view>

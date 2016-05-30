@@ -1,0 +1,23 @@
+<!--For Activities-->
+<ion-view title="Aktivitäten">
+  <ion-content class="has-header">
+      <ion-refresher
+              pulling-text="Pull to refresh..."
+              on-refresh="doRefresh()">
+      </ion-refresher>
+    <ion-list>
+      <ion-item class="item-icon-right" ng-repeat="activity in activities" href="#" ui-sref="app.care.entries({activityId: activity.id})">
+          <!--ui-sref="app.care.activities.entries({activityId: activity.id})"-->
+            {{activity.title}}
+          <span class="item-note"><line-chart data="activity.daysliceCount" options=""></line-chart></span>
+          <span class="badge badge-assertive">{{activity.entryCount}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <a class="button button-clear icon ion-plus" ui-sref="app.care.addentry({activityId: activity.id})"> Eigene Aktivität anlegen</a>
+    </div>
+  </div>
+</ion-view>

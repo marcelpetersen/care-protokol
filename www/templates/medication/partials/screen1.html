@@ -1,0 +1,86 @@
+<div class="list list-inset">
+ <label class="item item-input">
+     <span class="input-label">Title</span>
+     <input type="text" name="title" ng-model="currentEntry.title" required="required">
+     <span ng-show="showError && frmAddEditEntry.title.$invalid">
+       <i class="icon ion-alert-circled error"></i>
+       <span ng-show="frmAddEditEntry.title.$error.required">{{ 'MEDICATION_ERR_TITLE' | translate }}</span>
+      </span>
+ </label>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+    <span class="input-label">Dosage: <strong>{{currentEntry.dosage}}</strong></span>
+  </label>
+  <div class="range range-royal pp-range">
+    <i class="icon ion-minus-circled royal decrement" ng-click="reduceDosage()"></i>
+    <input type="range" min="0.25" step="0.25" max="2" ng-model="currentEntry.dosage">
+    <i class="icon ion-plus-circled royal increment" ng-click="increaseDosage()"></i>
+  </div>
+</div>
+
+<div class="padding">
+
+  <div class="list padding-vertical">
+      <div class="item item-divider pp-item-divider">
+        Application <span ng-show="showError && frmAddEditEntry.appl.$invalid">
+             <i class="icon ion-alert-circled error"></i>
+             <span ng-show="frmAddEditEntry.appl.$error.required">{{ 'MEDICATION_ERR_APPL' | translate }}</span>
+            </span>
+      </div>
+      <ion-radio name="appl" ng-repeat="option in applications" ng-value="option.key" ng-model="currentEntry.application" required="required">
+        {{ option.text | translate }}
+      </ion-radio>
+
+    </div>
+  <h3>Amount</h3>
+  <span ng-show="showError && currentEntry.morning == 0 && currentEntry.midday == 0 && currentEntry.evening == 0 && currentEntry.night == 0">
+  <i class="icon ion-alert-circled error"></i>
+  <span>{{ 'MEDICATION_ERR_AMOUNT' | translate }}</span>
+ </span>
+<div class="list list-inset">
+  <label class="item item-input">
+      <span class="input-label">Morning: <strong>{{currentEntry.morning}}</strong></span>
+    </label>
+  <div class="range range-royal pp-range">
+      <i class="icon ion-minus-circled royal decrement" ng-click="reduceMornAmount()"></i>
+      <input name="morning" type="range" min="0" max="5" ng-model="currentEntry.morning">
+      <i class="icon ion-plus-circled royal increment" ng-click="increaseMornAmount()"></i>
+    </div>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+      <span class="input-label">Midday: <strong>{{currentEntry.midday}}</strong></span>
+    </label>
+  <div class="range range-royal pp-range">
+      <i class="icon ion-minus-circled royal decrement" ng-click="reduceMidAmount()"></i>
+      <input name="midday" type="range" min="0" max="5" ng-model="currentEntry.midday">
+      <i class="icon ion-plus-circled royal increment" ng-click="increaseMidAmount()"></i>
+    </div>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+      <span class="input-label">Evening: <strong>{{currentEntry.evening}}</strong></span>
+    </label>
+  <div class="range range-royal pp-range">
+      <i class="icon ion-minus-circled royal decrement" ng-click="reduceEveAmount()"></i>
+      <input name="evening" type="range" min="0" max="5" ng-model="currentEntry.evening">
+      <i class="icon ion-plus-circled royal increment" ng-click="increaseEveAmount()"></i>
+    </div>
+</div>
+<div class="list list-inset">
+  <label class="item item-input">
+      <span class="input-label">Night: <strong>{{currentEntry.night}}</strong></span>
+    </label>
+  <div class="range range-royal pp-range">
+      <i class="icon ion-minus-circled royal decrement" ng-click="reduceNightAmount()"></i>
+      <input name="night" type="range" min="0" max="5" ng-model="currentEntry.night">
+      <i class="icon ion-plus-circled royal increment" ng-click="increaseNightAmount()"></i>
+    </div>
+</div>
+</div>
+<div class="list list-inset">
+    <label class="item item-input">
+      <textarea rows="3" placeholder="Ihre Notiz" ng-model="currentEntry.notes"></textarea>
+    </label>
+</div>

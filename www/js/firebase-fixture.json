@@ -1,0 +1,55 @@
+{ "users": [
+  {
+    "dakna": {
+      "name": "Daniel Knapp",
+      "email": "danieltest1@pflegeprotokoll.de",
+      "user": "demo",
+      "password": "demo"
+    }
+  },
+  {
+    "nicam": {
+      "name": "Nicole Ambacher",
+      "email": "nicoletest1@pflegeprotokoll.de",
+      "user": "demo2",
+      "password": "demo2"
+
+    }
+  }
+],
+  "carecategories": [
+    {
+      "name": "Körperpflege",
+      "caretasks": [
+        {"name": "Ganzkörperwäsche"},
+        {"name": "Teilwäsche"},
+        {"name": "Duschen"},
+        {"name": "Baden"},
+        {"name": "Mund-/Zahnpflege"},
+        {"name": "Kämmen"},
+        {"name": "Rasieren"},
+        {"name": "Blasenentleerung"},
+        {"name": "Darmentleerung"},
+        {"name": "Intimpflege"},
+        {"name": "Kleidung richten"},
+        {"name": "Inkontinenzartikel wechseln"},
+        {"name": "Urin-/Stomabeutel wechseln/leeren"}
+      ]
+    },
+    {
+      "name": "Ernährung",
+      "caretasks": [
+        {"name": "TestE"},
+        {"name": "Test2E"}
+      ]
+    },
+    {
+      "name": "Mobilität",
+      "caretasks": [
+        {"name": "TestM"},
+        {"name": "Test2M"}
+      ]
+    }
+
+  ]
+}

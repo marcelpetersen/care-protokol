@@ -1,0 +1,40 @@
+<ion-view title="{{ 'NAV_PRINTOUT' | translate }}">
+  <ion-content class="has-header">
+    <div class="padding">
+      <h3>Request a new Printout</h3>
+    </div>
+
+    <form ng-submit="dispatchPrintoutRequest(request)">
+
+	 		<div class="row responsive-sm">
+		    	 <div class="col">
+			    	<label class="item item-input" ng-click="openDateStart()">
+				       	 <span class="input-label">Start Date</span>
+				       	 <input type="text" ng-model="request.dateRange.start">
+			      	</label>
+				</div>
+			</div>
+
+			<div class="list list-inset">
+          <label class="item item-input" ng-click="openDateEnd()">
+               <span class="input-label">End Date</span>
+               <input type="text" ng-model="request.dateRange.end">
+            </label>
+      </div>
+
+
+  		<div class="list list-inset">
+        <ion-checkbox ng-repeat="section in request.sections" ng-model="section.enabled" ng-checked="section.enabled">
+            {{ section.key }}
+        </ion-checkbox>
+        </div>
+
+        <div class="padding">
+          <button type="submit" class="button button-block button-positive">Request</button>
+        </div>
+
+      </form>
+
+  </ion-content>
+
+</ion-view>

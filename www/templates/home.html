@@ -1,0 +1,162 @@
+<ion-view title='Pflegeprotokoll'>
+
+  <div ng-hide-auth class="content-pic-splash home">
+    <div class="bar bar-subheader bar-light text-center">
+      <strong>In einfachen Schritten zum vollständigen Pflegeprotokoll.</strong>
+    </div>
+ </div>
+
+  <ion-content ng-show-auth class="has-header">
+
+    <div class="content-pic-start home">
+      <div class="row">
+        <div class="col padding text-center svg-frame">
+          <div ng-show-auth>
+            <h3 class="home-headline">Familie Wagner</h3>
+            <badges layers="badges" mode="show"></badges>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div ng-show-auth>
+      <div class="row responsive-md">
+        <div class="col">
+          <ion-list>
+            <ion-item class="item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.care.dashboard" ng-show-auth>
+              <i class="icon {{ (careState.$value == 'completed') && 'ion-checkmark-circled balanced' || 'ion-alert'}}"></i>
+              <h2 class="pp-item-main">{{'NAV_PROTOCOL' | translate}}</h2>
+              <span class="item-note"><span ng-show="careCount < 7">{{careCount}}</span><span ng-show="careCount > 6">mehr als 7</span> Tage fertig</span>
+              <span class="badge badge-positive">{{careCount}}</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div class="col">
+          <ion-list>
+            <ion-item class=" item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.competency.dashboard" ng-show-auth>
+              <i class="icon {{ (competencyState.$value == 'completed') && 'ion-checkmark-circled balanced'|| 'ion-alert'}}"></i>
+              <h2 class="pp-item-main">{{ 'NAV_COMPETENCY' | translate }}</h2>
+              <span class="item-note">noch keine Einträge</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+      <div class="row responsive-md">
+        <div class="col">
+          <ion-list>
+            <ion-item class=" item-icon-left pp-item-large item-icon-right" href="#">
+              <i class="icon ion-alert"></i>
+              <h2 class="pp-item-main">{{ 'NAV_APPLIANCES' | translate }}</h2>
+              <span class="item-note">noch keine Einträge</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div class="col">
+          <ion-list>
+            <ion-item class=" item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.medication.dashboard" ng-show-auth>
+              <i class="icon {{ (medicationState.$value == 'completed') && 'ion-checkmark-circled balanced'|| 'ion-alert'}}"></i>
+              <h2 class="pp-item-main">{{ 'NAV_MEDICATION' | translate }}</h2>
+              <span class="item-note"><span ng-repeat="drug in drugList">{{ drug.title }}<span ng-show="!$last ">, </span> </span> <span ng-show="drugCount > 2">and {{drugCount - drugList.length}} more</span></span>
+              <span class="badge badge-positive">{{ drugCount }}</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+      <div class="row responsive-md">
+        <div class="col">
+          <ion-list>
+            <ion-item class=" item-icon-left pp-item-large item-icon-right" ui-sref="app.tip.dashboard" ng-show-auth>
+              <i class="icon {{ (tipState.$value == 'completed') && 'ion-checkmark-circled balanced'|| 'ion-alert'}}"></i>
+              <h2 class="pp-item-main">{{ 'NAV_TIPPS' | translate }}</h2>
+              <span class="item-note">noch nie angesehen</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div class="col">
+          <ion-list>
+            <ion-item access-level="accessLevels.admin" class="item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.printout.dashboard" ng-show-auth>
+              <i class="icon ion-checkmark-circled balanced"></i>
+              <h2 class="pp-item-main">{{ 'NAV_PRINTOUT' | translate }}</h2>
+              <span class="item-note">zuletzt heute um 14.03 Uhr</span>
+              <span class="badge badge-positive">3</span>
+              <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="padding-vertical">
+    </div>
+
+
+    <div class="padding">
+      <div ng-show-auth>
+        <p class="text-center"></p>
+      </div>
+      <!--
+            <ion-list ng-show-auth="login">
+              <ion-item class="item-icon-right" href="#" ui-sref="app.account">
+                Ihr Profil
+                <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+              <ion-item class="item-icon-right" href="#" ui-sref="app.about">
+                Über uns
+                <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+              <ion-item class="item-icon-right" href="#" ui-sref="app.contact">
+                Kontakt
+                <i class="icon ion-chevron-right icon-accessory"></i>
+              </ion-item>
+            </ion-list>
+      -->
+
+      <div ng-show-auth="'error'" class="padding">
+        <p class="text-center">{{auth.error}}</p>
+      </div>
+    </div>
+  </ion-content>
+
+  <div ng-hide-auth class="">
+    <div class="row responsive-md row-footer">
+      <div class="col">
+        <ion-list>
+          <ion-item class="item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.register">
+            <i class="icon ion-plus-circled royal"></i>
+            <h2 class="pp-item-main">{{'NAV_REGISTER' | translate}}</h2>
+            <span class="item-note">Neues Konto erstellen</span>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+        </ion-list>
+      </div>
+      <div class="col">
+        <ion-list>
+          <ion-item class="item-icon-left pp-item-large item-icon-right" href="#" ui-sref="app.login">
+            <i class="icon ion-person royal"></i>
+            <h2 class="pp-item-main">{{'NAV_LOGIN' | translate}}</h2>
+            <span class="item-note">Mein Konto nutzen</span>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show-auth class="bar bar-footer bar-positive" >
+    <div class="button-bar">
+      <a class="button button-clear icon ion-clipboard" ng-click="showLeftMenu()"> Protokoll</a>
+      <a class="button button-clear icon ion-person" ng-click="showRightMenu()"> Lernprogramm</a>
+    </div>
+  </div>
+
+</ion-view>

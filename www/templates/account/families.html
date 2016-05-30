@@ -1,0 +1,23 @@
+<ion-view title="User Families">
+  <ion-content class="has-header">
+
+    <div class="list padding-vertical">
+        <div class="item item-divider pp-item-divider">
+          Family List
+        </div>
+      <form name="famForm">
+          <ion-radio ng-repeat="family in families" name="foption" ng-value="family.$id" ng-click="enableSave(famForm.$dirty)" ng-model="currentFamily.key">
+            {{ family.$id }}
+          </ion-radio>
+      </form>
+      </div>
+  </ion-content>
+
+  <div class="bar bar-footer bar-positive">
+        <div class="button-bar">
+          <button  class="button button-clear icon ion-filing" ui-sref="app.account.dashboard"> Back </button>
+          <button class="button button-clear icon ion-checkmark" ng-disabled="!allowSave" ng-click="updateFamily(currentFamily)"> {{ 'ACCOUNT_FAMILY_UPDATE' | translate }}</button>
+        </div>
+      </div>
+</ion-view>
+

@@ -1,0 +1,26 @@
+<ion-view title="Difficulties">
+  <ion-header-bar class="bar-stable bar-subheader">
+      <div class="buttons">
+        <button class="button button-icon icon ion-ios7-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+      </div>
+      <div class="buttons pull-right">
+        <button class="button button-icon icon ion-ios7-settings " ng-click="data.showDelete = false; data.showReorder = !data.showReorder"></button>
+      </div>
+    </ion-header-bar>
+  <ion-content class="has-header has-subheader has-footer">
+    <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+      <ion-item ng-repeat="item in userdifficulties" class="item-icon-right" item="item" href="#/app/care/difficulty/{{item.$id}}">
+        {{ item.title }} <span ng-show="entry.notes">[{{item.notes}}]</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-delete-button class="ion-minus-circled" ng-click="removeEntry(item)"></ion-delete-button>
+        <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+      <div class="button-bar">
+        <a class="button button-clear icon ion-close-circled" ui-sref="app.care.dashboard"> Abbrechen</a>
+        <a class="button button-clear icon ion-plus" ui-sref="app.care.select-difficulty">Neuer Eintrag</a>
+      </div>
+    </div>
+ </ion-view>

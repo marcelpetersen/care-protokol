@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
+    <link href="css/ionic.app.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <!--<script src="lib/ionic/js/ionic.bundle.js"></script> -->
+    <!-- ui-router updated to 0.2.11 because of optional state params. so we include files manually. -->
+    <script src="lib/ionic/js/ionic.js"></script>
+    <script src="lib/ionic/js/angular/angular.js"></script>
+    <script src="lib/ionic/js/angular/angular-animate.js"></script>
+    <script src="lib/ionic/js/angular/angular-sanitize.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.js"></script>
+    <script src="lib/ionic/js/ionic-angular.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- vendor libs -->
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/firebase.js"></script>  <!-- 1.0.21 -->
+    <script src="lib/firebase-simple-login.js"></script> <!-- 1.6.3 -->
+    <script src="lib/angularfire.min.js"></script>       <!-- 0.8.2 -->
+
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="lib/jquery.peity.min.js"></script>
+    <script src="lib/angular-peity.js"></script>
+
+    <script src="lib/angular-cookies.min.js"></script> <!-- 1.2.17 -->
+    <script src="lib/angular-locale_de-de.js"></script>
+    <script src="lib/angular-translate.min.js"></script>  <!-- 2.2.0 -->
+    <script src="lib/angular-translate-storage-cookie.min.js"></script>  <!-- 2.2.0 -->
+    <script src="lib/moment-with-langs.min.js"></script>
+    <script src="lib/angular-moment.min.js"></script>
+    <script src="lib/angular-loggly-logger.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/translate.js"></script>
+    <script src="js/routeConfig.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/controllers.admin.js"></script>
+    <script src="js/controllers.account.js"></script>
+    <script src="js/controllers.care.js"></script>
+    <script src="js/controllers.coach.js"></script>
+    <script src="js/controllers.competency.js"></script>
+    <script src="js/controllers.login.js"></script>
+    <script src="js/controllers.medication.js"></script>
+    <script src="js/controllers.printout.js"></script>
+    <script src="js/controllers.reward.js"></script>
+    <script src="js/controllers.tip.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/service.dateselect.js"></script>
+    <script src="js/service.sections.js"></script>
+    <script src="js/service.login.js"></script>
+    <script src="js/service.users.js"></script>
+    <script src="js/service.reward.js"></script>
+    <script src="js/service.families.js"></script>
+    <script src="js/service.gamification.js"></script>
+    <script src="js/service.firebase.js"></script>
+    <script src="js/service.firebase.changeEmail.js"></script>
+    <script src="js/service.underscore.js"></script>
+    <script src="js/filters.js"></script>
+  </head>
+
+  <body ng-app="ppApp">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>

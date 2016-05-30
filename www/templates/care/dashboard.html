@@ -1,0 +1,125 @@
+<ion-view title="{{ 'NAV_PROTOCOL' | translate }}">
+  <div class="bar bar-subheader bar-light">
+    <div class="button-bar">
+      <a class="button button-clear icon ion-chevron-left" ng-click="prevDayDo()"></a>
+      <a class="button button-clear" ng-click="openDateDo()"><strong>{{data.formatted}}</strong></a>
+      <a class="button button-clear icon ion-chevron-right" ng-click="nextDayDo()"></a>
+    </div>
+  </div>
+  <ion-content class="has-header has-footer has-subfooter ">
+    <div class="content-pic-start responsive-sm care">
+    </div>
+    <div ng-controller="CareCategoriesCtrl">
+    <ion-list ng-show="activityList==null">
+      <ion-item class="item-divider pp-item-divider text-center" >
+        {{'APP_ACTIVITIES' | translate}}
+      </ion-item>
+      <ion-item class="item-icon-right item-button-right">
+        Heute noch keine Einträge.
+        <button class="button button-stable" ui-sref="app.care.categories({action: 'create'})">{{'CARE_CREATE' | translate}}</button>
+      </ion-item>
+    </ion-list>
+    <ion-list id="mainList" ng-show="activityList!=null">
+      <ion-item class="item-divider pp-item-divider text-center" >
+        {{'APP_ACTIVITIES' | translate}}
+      </ion-item>
+      <div id="delNotify" class="recent-remove">
+        Item deleted
+      </div>
+      <div ng-repeat="activity in activityList | filter:{dayslice:'morning'} ">
+
+        <ion-item class="item-divider pp-item-divider text-center" ng-show="$first">
+          <span class="item-note pp-nofloat">{{'CARE_MORNING' | translate}}</span>
+        </ion-item>
+        <ion-item id="{{activity.$id}}" class="item-icon-right pp-item-badge-right" href="#" ui-sref="app.care.entry({id: activity.$id})">
+          {{activity.activity.title}}
+          <span class="item-note">Daniel</span> <!-- insert username from activity.user again-->
+          <span class="badge badge-stable">{{activity.minutes}}</span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </div>
+      <div ng-repeat="activity in activityList | filter:{dayslice:'midday'} ">
+        <ion-item class="item-divider pp-item-divider text-center" ng-show="$first">
+          <span class="item-note pp-nofloat">{{'CARE_MIDDAY' | translate}}</span>
+        </ion-item>
+        <ion-item id="{{activity.$id}}" class="item-icon-right pp-item-badge-right" href="#" ui-sref="app.care.entry({id: activity.$id})">
+          {{activity.activity.title}}
+          <span class="item-note">Daniel</span> <!-- insert username from activity.user again-->
+          <span class="badge badge-stable">{{activity.minutes}}</span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </div>
+      <div ng-repeat="activity in activityList | filter:{dayslice:'evening'} ">
+        <ion-item class="item-divider pp-item-divider text-center" ng-show="$first">
+          <span class="item-note pp-nofloat">{{'CARE_EVENING' | translate}}</span>
+        </ion-item>
+        <ion-item id="{{activity.$id}}" class="item-icon-right pp-item-badge-right" href="#" ui-sref="app.care.entry({id: activity.$id})">
+          {{activity.activity.title}}
+          <span class="item-note">Daniel</span> <!-- insert username from activity.user again-->
+          <span class="badge badge-stable">{{activity.minutes}}</span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </div>
+      <div ng-repeat="activity in activityList | filter:{dayslice:'night'} ">
+        <ion-item class="item-divider pp-item-divider text-center" ng-show="$first">
+          <span class="item-note pp-nofloat">{{'CARE_NIGHT' | translate}}</span>
+        </ion-item>
+        <ion-item id="{{activity.$id}}" class="item-icon-right pp-item-badge-right" href="#" ui-sref="app.care.entry({id: activity.$id})">
+          {{activity.activity.title}}
+          <span class="item-note">Daniel</span> <!-- insert username from activity.user again-->
+          <span class="badge badge-stable">{{activity.minutes}}</span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </div>
+      <ion-item class=" item-divider pp-item-divider pp-item-block pp-item-badge-right text-center">
+        <span class="item-note">Total</span>
+        <span class="badge badge-positive">{{totalMinutes}}</span>
+      </ion-item>
+    </ion-list>
+
+    <ion-list ng-if="false">
+      <ion-item class="item-divider pp-item-divider text-center">
+        {{'APP_CATEGORIES' | translate}}
+      </ion-item>
+      <ion-item class="item-icon-right pp-item-badge-right" ng-repeat="(key, category) in categories" ng-click="selectCategory(category)">
+        {{category.title}}
+        <span class="item-note">Minuten</span><span class="badge badge-positive">{{getMinsPerCatSelDate(category)}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+    <div class="row responsive-md" ng-repeat="rowCategories in categories | inSlicesOf:2">
+      <div class="col" ng-repeat="(key, category) in rowCategories">
+        <ion-list>
+          <ion-item class="item-icon-left pp-item-block" ng-click="selectCategory(category)">
+            <i class="icon icon-category-{{category.$id}}"></i>
+            <h2 class="pp-item-main">{{category.title}}</h2>
+            <span class="badge badge-positive">{{getMinsPerCatSelDate(category)}}</span>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
+
+    <div class="padding" ng-show="showDemo">
+      <div>
+        <img src="img/puppy.png" style="width: 80px; float: left;"/>
+        <h4 style="line-height: 25px;">Ups, erwischt! <br>Wir haben für diesen Link im Demo-Modus noch keine Inhalte.</h4>
+      </div>
+    </div>
+  </div>
+  </ion-content>
+  <div class="bar bar-subfooter bar-royal">
+    <div class="button-bar">
+      <button class="button button-clear icon ion-stats-bars" ng-click="showDemo=true"> Statistics</button>
+      <button class="button button-clear icon ion-shuffle" ui-sref="app.care.difficulties"> Difficulties</button>
+
+    </div>
+  </div>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button  class="button button-clear icon ion-filing" ui-sref="app.care.timeline"> Timeline</button>
+      <button  class="button button-clear icon ion-plus" ng-click="newEntry()"> Add record</button>
+    </div>
+  </div>
+</ion-view>

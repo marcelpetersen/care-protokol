@@ -1,0 +1,52 @@
+<!--For Add New-->
+<ion-view title="{{ 'MEDICATION_ADD_EDIT' | translate}}">
+<form novalidate name="frmAddEditEntry">
+  <div class="bar bar-subheader bar-light">
+    <div ng-switch="formScreen">
+      <div class="button-bar padding-horizontal" ng-switch-default>
+        <a class="button button-positive icon icon-left ion-chevron-left">Schritt 1</a>
+        <a class="button button-clear icon icon-right ion-chevron-right" ng-click="showNext(1)"> Schritt 2</a>
+      </div>
+      <div class="button-bar padding-horizontal" ng-switch-when="screen2">
+        <a class="button button-clear icon icon-left ion-chevron-left" ng-click="showNext(0)">Schritt 1</a>
+        <a class="button button-positive icon icon-right ion-chevron-right" ng-click="showNext(1)"> Schritt 2</a>
+      </div>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader has-footer">
+        <div class="animate-switch-container" ng-switch="formScreen">
+             <div ng-switch-default>
+               <div ng-include="'templates/medication/partials/screen1.html'"></div>
+             </div>
+             <div ng-switch-when="screen2">
+               <div ng-include="'templates/medication/partials/screen2.html'"></div>
+             </div>
+        </div>
+  </ion-content>
+</form>
+  <div class="bar bar-footer bar-positive" ng-switch="formScreen">
+      <div class="button-bar" ng-switch-default>
+        <button class="button button-clear icon ion-checkmark" ng-click="save(currentEntry)"> Continue</button>
+        <button class="button button-clear icon ion-close-circled" ui-sref="app.medication.entries"> Abbrechen</button>
+      </div>
+      <div class="button-bar" ng-switch-when="screen2">
+        <button class="button button-clear icon ion-checkmark" ng-click="save(currentEntry)"> Speichern</button>
+        <button class="button button-clear icon ion-close-circled" ui-sref="app.medication.entries"> Abbrechen</button>
+      </div>
+  </div>
+
+</ion-view>
+
+<script id="modal.medication.error.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Form error</h1>
+      <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+		<ion-content>
+      <div class="padding">
+		    <p ng-repeat="error in formerrors"> {{ error | translate}}</p>
+      </div>
+		</ion-content>
+  </ion-modal-view>
+</script>

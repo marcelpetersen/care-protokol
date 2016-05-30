@@ -1,0 +1,15 @@
+<ion-view title="{{ 'NAV_PRINTOUT' | translate }}">
+  <ion-content class="has-header">
+    <div class="padding">
+      <h3>Archive for requested Printouts</h3>
+    </div>
+ 	
+    <ion-list>
+ 	 <ion-item class="item-icon-right" href="#" ng-repeat="item in archiveitems" ui-sref="app.printout.archiveitem({ item: item.$id})">
+    		{{item.$id}}
+	</ion-item>
+	</ion-list>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,99 @@
+<ion-view title="{{ 'COMPETENCY_QUESTIONNAIRE' | translate }}">
+  <ion-content class="has-header has-footer">
+		<ion-list>
+			<div class="item item-divider">Ihr Fragebogen zur Alltagskompetenz: {{ getQuestionIndex() }} von {{ questions.length }} Fragen</div>
+			<div ng-repeat="answered in completedQuestions">
+				<ion-item class="item-icon-right"
+						ng-click="toggleAnswers(answered)"
+						ng-class="{active: isAnsShown(answered), 'pp-item-active' : isAnsShown(answered)}">
+          {{answered.question.short}}
+          <i class="icon icon-accessory" ng-class="isAnsShown(answered) ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+					</span>
+			  </ion-item>
+        <div ng-show="isAnsShown(answered)">
+          <div class="padding">
+            <h4 class="positive">{{answered.question.question}}</h4>
+            <div class="row pp-row padding-vertical responsive-lg">
+              <div class="col-75">
+                <p>{{answered.question.text}}</p>
+              </div>
+              <div class="col-25">
+                <button class="button button-block" ng-click="openPopover($event, answered.question.example)"><i class="icon ion-help-circled calm"></i> Beispiele ansehen</button>
+              </div>
+            </div>
+
+            <form role="form" ng-submit="updateOption(answered.answeroption)">
+              <div class="list padding-vertical">
+                <div class="item item-divider pp-item-divider">
+                  Wie oft kam das in den vergangenen 2 Monaten vor?
+                </div>
+                <ion-radio ng-repeat="option in answeroptions" ng-value="option" ng-model="answered.answeroption.option">
+                  {{ option | translate }}
+                </ion-radio>
+              </div>
+              <label class="item item-input">
+                <textarea rows="3" placeholder="Ihre Notiz" ng-model="answered.answeroption.note">{{answered.answeroption.note}}</textarea>
+              </label>
+            </form>
+          </div>
+          <div class="item item-divider"></div>
+        </div>
+			</div>
+			<div ng-show="currentOpenQuestion != null">
+				<ion-item class="item-icon-right "
+							ng-click="toggleAnswers(answered)"
+							ng-class="{active: isAnsShown(answered), 'pp-item-active' : isAnsShown(answered)}">
+					{{ currentOpenQuestion.short }}
+          <i class="icon icon-accessory" ng-class="isAnsShown(answered) ? 'positive ion-chevron-down' : 'ion-chevron-right'"></i>
+				 </ion-item>
+				<div class="padding" ng-show="isAnsShown(answered)">
+          <h4 class="positive">{{currentOpenQuestion.question}}</h4>
+          <div class="row pp-row padding-vertical responsive-lg">
+            <div class="col-75">
+              <p>{{currentOpenQuestion.text}}</p>
+            </div>
+            <div class="col-25">
+              <button class="button button-block" ng-click="openPopover($event, currentOpenQuestion.example)"><i class="icon ion-help-circled calm"></i> Beispiele ansehen</button>
+            </div>
+          </div>
+
+					<form role="form">
+						<div class="list padding-vertical">
+              <div class="item item-divider pp-item-divider">
+                Wie oft kam das in den vergangenen 2 Monaten vor?
+              </div>
+              <ion-radio ng-repeat="option in answeroptions" ng-value="option" ng-model="newAnswer.option">
+                {{ option | translate }}
+              </ion-radio>
+						</div>
+            <label class="item item-input">
+              <textarea rows="3" placeholder="Ihre Notiz" ng-model="newAnswer.note"></textarea>
+            </label>
+					</form>
+        </div>
+			</div>
+		</ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button class="button button-clear icon ion-checkmark" ng-click="updateAll()" ng-show="shownAns != null"> {{ 'COMPETENCY_QUESTION_UPDATE' | translate }}</button>
+      <button class="button button-clear icon ion-checkmark" ng-click="saveOption(currentOpenQuestion)" ng-show="shownAns == null">{{'APP_SAVE_CONTINUE' | translate }}</button>
+      <button class="button button-clear icon ion-close-circled" ui-sref="app.home">{{'COMPETENCY_QUESTIONNAIRE_CANCEL' | translate}}</button>
+    </div>
+  </div>
+</ion-view>
+
+<script id="popover.competency.question.html" type="text/ng-template">
+  <ion-popover-view>
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Beispiele</h1>
+    </ion-header-bar>
+		<ion-content>
+      <div class="padding">
+		    <p>{{popover.content}}</p>
+      </div>
+		</ion-content>
+  </ion-popover-view>
+</script>
+
+

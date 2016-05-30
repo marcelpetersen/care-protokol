@@ -1,0 +1,27 @@
+<ion-view title="{{ 'NAV_REWARD' | translate }}">
+  <ion-content class="has-header">
+    <div class="row">
+      <div class="col padding text-center svg-frame">
+        <h3 class="home-headline">Familie Wagner</h3>
+        <badges layers="badges" mode="show"></badges>
+      </div>
+     </div>
+
+	<!--{{rewardeditem | json}}-->
+
+  <div class="row responsive-md rewards" ng-repeat="row in rewardeditems | inSlicesOf:3">
+     <div class="col col-33 text-center" ng-repeat="item in row">
+          <h4>{{item.$id}}</h4>
+         <img class="houseitem" src="img/badge/{{item.filename}}">
+      </div>
+  </div>
+  <div class="padding">
+    <button class="button button-royal button-block" ui-sref="{{gotostate}}">Weiter</button>
+  </div>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button  class="button button-clear icon ion-filing" ui-sref=""> Alle Auszeichnungen</button>
+    </div>
+  </div>
+</ion-view>

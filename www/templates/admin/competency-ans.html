@@ -1,0 +1,23 @@
+<ion-view title="Competency Answer Options">
+  <ion-header-bar class="bar-stable bar-subheader">
+     <div class="buttons pull-right">
+       <button class="button button-icon icon ion-ios7-settings " ng-click="data.showReorder = !data.showReorder"></button>
+     </div>
+   </ion-header-bar>
+  <ion-content class="has-header">
+    <ion-list show-reorder="data.showReorder">
+        <ion-item ng-repeat="item in answeroptions" class="item-icon-right" item="item">
+          {{ item | translate }}
+          <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+        </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+  <div class="bar bar-footer bar-positive">
+        <div class="button-bar">
+          <button  class="button button-clear icon ion-filing" ui-sref="app.admin.dashboard"> Back </button>
+        </div>
+      </div>
+</ion-view>
+

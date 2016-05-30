@@ -1,0 +1,14 @@
+<ion-view title="{{coaching.title}} Video">
+  <ion-content class="has-header">
+    <div id="pp-video-container">
+      <video id="vid" width="100%" preload="none" poster="img/coachtest3.png" controls>
+        <source src="video/coachtest3.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="padding">
+      <p>Viele an Demenz erkrankte Menschen stellen immer wieder dieselbe Frage. Wir zeigen Ihnen, wie Sie reagieren können und damit die Situation gut meistern können.</p>
+      <button class="button button-royal " ng-click="playVideo()">Video abspielen</button>
+      <button class="button button-royal icon icon-right ion-chevron-right" ui-sref="app.coach.module-first">Weiter</button>
+    </div>
+  </ion-content>
+</ion-view>

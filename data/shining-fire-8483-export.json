@@ -1,0 +1,2660 @@
+{
+  "care" : {
+    "activities" : {
+      "accompany" : {
+        ".priority" : 49.0,
+        "category" : "mobility",
+        "title" : "Begleitung (z. B. zum Arzt)"
+      },
+      "bath" : {
+        ".priority" : 4.0,
+        "category" : "body",
+        "title" : "Baden"
+      },
+      "beddingchange" : {
+        ".priority" : 65.0,
+        "category" : "household",
+        "title" : "Wechsel der Wäsche"
+      },
+      "bedgetup" : {
+        ".priority" : 41.0,
+        "category" : "mobility",
+        "title" : "Aufstehen vom Bett"
+      },
+      "bedgoto" : {
+        ".priority" : 43.0,
+        "category" : "mobility",
+        "title" : "Zubettgehen"
+      },
+      "cleaning" : {
+        ".priority" : 63.0,
+        "category" : "household",
+        "title" : "Wohnung reinigen"
+      },
+      "clothprepare" : {
+        ".priority" : 9.0,
+        "category" : "body",
+        "title" : "Kleidung richten"
+      },
+      "cooking" : {
+        ".priority" : 62.0,
+        "category" : "household",
+        "title" : "Kochen"
+      },
+      "defecation" : {
+        ".priority" : 7.0,
+        "category" : "body",
+        "title" : "Darmentleerung"
+      },
+      "dentalcare" : {
+        ".priority" : 5.0,
+        "category" : "body",
+        "title" : "Mund-/Zahnpflege"
+      },
+      "dressing" : {
+        ".priority" : 45.0,
+        "category" : "mobility",
+        "title" : "An- und Auskleiden"
+      },
+      "eatassist" : {
+        ".priority" : 22.0,
+        "category" : "nutrition",
+        "title" : "Essen und Trinken reichen"
+      },
+      "eatbitesize" : {
+        ".priority" : 21.0,
+        "category" : "nutrition",
+        "title" : "Mundgerechte Zubereitung"
+      },
+      "heating" : {
+        ".priority" : 67.0,
+        "category" : "household",
+        "title" : "Wohnung heizen"
+      },
+      "incontinencechange" : {
+        ".priority" : 10.0,
+        "category" : "body",
+        "title" : "Inkontinenzartikel wechseln"
+      },
+      "intimatecare" : {
+        ".priority" : 8.0,
+        "category" : "body",
+        "title" : "Intimpflege"
+      },
+      "movehouse" : {
+        ".priority" : 46.0,
+        "category" : "mobility",
+        "title" : "Bewegen im Haus"
+      },
+      "position" : {
+        ".priority" : 42.0,
+        "category" : "mobility",
+        "title" : "Lagerung"
+      },
+      "shopping" : {
+        ".priority" : 61.0,
+        "category" : "household",
+        "title" : "Einkaufen"
+      },
+      "shower" : {
+        ".priority" : 3.0,
+        "category" : "body",
+        "title" : "Duschen"
+      },
+      "stairclimbing" : {
+        ".priority" : 48.0,
+        "category" : "mobility",
+        "title" : "Treppensteigen"
+      },
+      "standing" : {
+        ".priority" : 47.0,
+        "category" : "mobility",
+        "title" : "Stehen"
+      },
+      "urinarystomachange" : {
+        ".priority" : 11.0,
+        "category" : "body",
+        "title" : "Urin-/Stomabeutel wechseln"
+      },
+      "urination" : {
+        ".priority" : 6.0,
+        "category" : "body",
+        "title" : "Blasenentleerung"
+      },
+      "washfull" : {
+        ".priority" : 1.0,
+        "category" : "body",
+        "title" : "Ganzkörperwäsche"
+      },
+      "washiron" : {
+        ".priority" : 66.0,
+        "category" : "household",
+        "title" : "Waschen und Bügeln"
+      },
+      "washpart" : {
+        ".priority" : 2.0,
+        "category" : "body",
+        "title" : "Teilwäsche"
+      },
+      "washup" : {
+        ".priority" : 64.0,
+        "category" : "household",
+        "title" : "Spülen"
+      },
+      "wheelchair" : {
+        ".priority" : 44.0,
+        "category" : "mobility",
+        "title" : "Rollstuhl (Aufstehen/Hineinsetzen)"
+      }
+    },
+    "categories" : {
+      "body" : {
+        "title" : "Körperpflege"
+      },
+      "household" : {
+        "title" : "Haushalt"
+      },
+      "mobility" : {
+        "title" : "Mobilität"
+      },
+      "nutrition" : {
+        "title" : "Ernährung"
+      }
+    },
+    "difficulties" : {
+      "blindness" : {
+        ".priority" : 11.0,
+        "title" : "Blindheit"
+      },
+      "contractures" : {
+        ".priority" : 2.0,
+        "title" : "Kontrakturen"
+      },
+      "deafness" : {
+        ".priority" : 12.0,
+        "title" : "Taubheit"
+      },
+      "decompensation" : {
+        ".priority" : 9.0,
+        "title" : "Herzkreislauf-Schwäche mit Atemnot, Schwäche, Blauanlaufen"
+      },
+      "defense" : {
+        ".priority" : 3.0,
+        "title" : "Abwehrverhalten des Pflegebedürftigen"
+      },
+      "dysphagia" : {
+        ".priority" : 6.0,
+        "title" : "Schluckstörungen"
+      },
+      "hemiplegia" : {
+        ".priority" : 8.0,
+        "title" : "Hemiplegie oder unvollständige Lähmung"
+      },
+      "mechanicaldigestion" : {
+        ".priority" : 10.0,
+        "title" : "Erforderlichkeit der mechanischen Harnlösung oder der digitalen Enddarmentleerung"
+      },
+      "medicaltask" : {
+        ".priority" : 13.0,
+        "title" : "medizinisch notwendige Pflegemaßnahmen"
+      },
+      "pain" : {
+        ".priority" : 4.0,
+        "title" : "Starke therapieresistente Schmerzen"
+      },
+      "setup" : {
+        ".priority" : 5.0,
+        "title" : "Pflegebehindernde räumliche Verhältnisse"
+      },
+      "spastic" : {
+        ".priority" : 7.0,
+        "title" : "hochgradige Spastik oder einschießende Bewegungen"
+      },
+      "tools" : {
+        ".priority" : 14.0,
+        "title" : "Zeitaufwendiger Hilfsmitteleinsatz"
+      },
+      "weight" : {
+        ".priority" : 1.0,
+        "title" : "Hohes Körpergewicht des Pflegebedürftigen (über 80 kg)"
+      }
+    }
+  },
+  "competency" : {
+    "answeroptions" : {
+      "frequently" : {
+        ".value" : true,
+        ".priority" : 2.0
+      },
+      "never" : {
+        ".value" : true,
+        ".priority" : 0.0
+      },
+      "occasionally" : {
+        ".value" : true,
+        ".priority" : 3.0
+      },
+      "seldom" : {
+        ".value" : true,
+        ".priority" : 1.0
+      }
+    },
+    "questions" : {
+      "adaptiontosituation" : {
+        "example" : "Geht im T-Shirt bei Schnee nach draussen. Die Socken sind über den Schuhen. Lacht oder schimpft laut im Supermarkt oder Restaurant. Zieht sich aus.",
+        "question" : "Der Pflegebedürftige verhält sich der Situation nicht angemessen.",
+        "short" : "Unangemessenes Verhalten",
+        "text" : "Kam es schon einmal zu peinlichen Situationen? Vor allem altersverwirrte Menschen schätzen ihre Umgebung nicht immer richtig ein. Sie reagieren dann ganz impulsiv. Nicht immer ist das Verhalten angebracht."
+      },
+      "agressiveness" : {
+        "example" : "Schimpft laut. Bekommt Wutausbrüche. Kneift. Hebt die Hand. Schlägt oder boxt.",
+        "question" : "Der Pflegebedürftige verhält sich mit Worten oder Taten aggressiv.",
+        "short" : "Agression",
+        "text" : "Fühlen Sie sich eingeschüchtert? Bei Menschen mit geistigen oder psychischen Einschränkungen kann es vorkommen, dass sich Charakterzüge verändern. Der Pflegeempfänger wird dann aggressiv. Dies kann nur kurz sein oder länger dauern, das kann mit Worten sein oder auch körperlichen Übergriffen."
+      },
+      "dailyactivities" : {
+        "example" : "Ist unvorsichtig mit Bargeld, Geldkarte oder PIN-Nummer. Findet nicht mehr nach Hause. Ist zu vertrauensvoll zu Fremden.",
+        "question" : "Der Pflegebedürftige kann wegen gestörter Hirnfunktion soziale Alltagssituationen nicht mehr bewältigen.",
+        "short" : "Bewältigung von Alltagssituationen",
+        "text" : "Findet sich Ihr Angehöriger im Alltag zurecht? Geistige Einschränkungen oder Demenz kann dazu führen, dass die Betroffenen völlig hilflos sind und Anleitung und Aufsicht im Alltag benötigen."
+      },
+      "dailyrecognition" : {
+        "example" : "Benutzt die Zahnbürste zum Putzen des Waschbeckens. Benutzt kein Besteck zum Essen. Tanzt bei Musik im Supermarkt. Angst beim Knarren einer Tür. Erschrecken vor harmlosen Regen oder Wasser.",
+        "question" : "Der Pflegebedürftige erkennt Alltagssituationen nicht und reagiert dann unpassend.",
+        "short" : "Erkennen von Alltagssituationen",
+        "text" : "Ist Ihr Angehöriger manchmal wunderlich? Psychische Erkrankungen oder Altersverwirrung können dazu führen, dass die Betroffenen sich im Alltag nicht mher zurechtfinden. Situationen werden nicht mehr erkannt, man weiss nicht mehr, was nun zu tun ist."
+      },
+      "dailystructure" : {
+        "example" : "Weiß nicht mehr, welche Tageszeit es ist. Vergisst zu essen, zu trinken oder auch sich zu waschen. Weiß nicht mehr, was jetzt zu tun ist. Vergisst zu putzen oder zu waschen.",
+        "question" : "Der Pflegebedürftige kann seinen Tagesablauf nicht mehr planen und selber strukturieren.",
+        "short" : "Tagesablauf",
+        "text" : "Kommt ihr Angehöriger schon mal ins Stocken? Es kommt vor, dass Menschen ihren Alltag nicht mehr alleine schaffen. Sie wissen nicht mehr, was jetzt wichtig ist oder verlieren den Überblick."
+      },
+      "dangeroussituations" : {
+        "example" : "L̈sst den Herd an. Bügelt und lässt das Bügeleisen brennen. Vergisst brennende Kerzen. Läuft einfach auf die Straße. Klettert auf Leitern oder Stühle.",
+        "question" : "Der Pflegebedürftige verursacht gefährliche Situationen oder erkennt diese nicht.",
+        "short" : "Gefährliche Situationen",
+        "text" : "Haben Sie manchmal Angst vor einem Unfall im Haus oder unterwegs? Es kann vorkommen, dass verwirrte oder psychisch Kranke Menschen gefährliche Situationen nicht mehr richtig einschätzen. Sie sehen die Gefahren nicht mehr und gefährden dann sich und andere."
+      },
+      "daynightrythm" : {
+        "example" : "Kann nicht mehr einschlafen. Ist die ganze Nacht wach. Schläft erst am Morgen ein und dann den ganzen Tag.",
+        "question" : "Der Pflegebedürftige hat einen gestörtenTag-Nacht-Rhythmus.",
+        "short" : "Tag-Nacht-Rhythmus",
+        "text" : "Machen Sie manchmal die Nacht zum Tag? Altersverwirrte Menschen leben manchmal nach ihrem ganz eigenen Rytmus."
+      },
+      "depression" : {
+        "example" : "Ist häufig traurig. Weint viel. Sagt, dass es keinen Sinn mehr macht. Will nicht mehr.",
+        "question" : "Der Pflegebedürftige ist überwiegend verzagt, niedergeschlagen hilflos, und hoffnungslos (therapieresistent Depression).",
+        "short" : "Depression",
+        "text" : "Ist ihr Angehöriger oft traurig? Demenzen und psychische Einschränkungen sind oft verbunden mit Traurigkeit. Das Fachwort heisst Depression. In manchen Fällen bringen auch Medikamente keine Besserung. Dann wird die Depression als \"therapieresistente Depression\" bezeichnet."
+      },
+      "emotionalvibe" : {
+        "example" : "Ist manchmals sehr traurig, dann wieder sehr fröhlich. Hat Wutausbrüche.",
+        "question" : "Der Pflegebedürftige ist starken Gefühlsschwankungen ausgeliefert.",
+        "short" : "Gefühlsschwankungen",
+        "text" : "Kennen Sie \"Himmelhochjauchzend\" und \"Zutodebetrübt\"? Psychische Erkrankungen oder Altersverwirrtheit können zu starken Gefühlsausbrüchen führen. Meist schwanken die Gefühle auch sehr schnell und die Stimmung schlägt plötzlich um."
+      },
+      "hazardousthings" : {
+        "example" : "Ist unvorsichtig mit Messern. Steigt auf hohe Leitern. Ist unvorsichtig mit Feuerzeug, Herd oder Bügeleisen.",
+        "question" : "Der Pflegebedürftige geht mit gefährlichen Dingen nicht sachgerecht um.",
+        "short" : "Gefährliche Gegenstände",
+        "text" : "Mussten Sie schon einmal eingreifen? Es kann vorkommen, dass Pflegebedürftige unvorsichtig sind und sich unbeabsichtigt in Gefahr bringen."
+      },
+      "leavingflat" : {
+        "example" : "Geht nachts zum Spazieren auf die Straße. Möchte einen Verwandten besuchen, und geht los. Schliesst die Tür auf und geht, ohne Bescheid zu geben.",
+        "question" : "Der Pflegebedürftige verlässt unkontroliiert die Wohnung.",
+        "short" : "Verlassen der Wohnung",
+        "text" : "Hat der Pflegebedürftige einen Drang zu Bewegung? Gerade bei altersverwirrten Menschen kann dies dazu führen, dass Sie ohne Begleitung die Wohnung oder das Haus verlassen. Das Fachwort ist \"Weglauftendenz\" oder \"Hinlauftendenz\"."
+      },
+      "ownneeds" : {
+        "example" : "Trinkt nicht genug. Hat keinen Hunger. Interessiert sich überhaupt nicht mehr für Hobbies. Spricht nicht mehr mit Nachbarn oder Freunden. Zieht sich immer mehr zurück. Weigert sich zu duschen.",
+        "question" : "Der Pflegebedürftige erkennt seine eigenen körperlichen und seelischen Bedürfnisse nicht mehr.",
+        "short" : "Eigene Bedürfnisse",
+        "text" : "Müssen Sie den Pflegebedürftigen anleiten? Menschen mit geistigen Einschränkungen wissen am manchen Stellen nicht, was Sie eigentlich brauchen. Sie können es nicht mehr erkennen. Dies gilt für körperliche Bedürfnisse wie Essen, Schlaf, Trinken, Toilettengang oder Körperhygiene. Genauso wie für seelische Bedürfnisse wie Reden, Menschen treffen oder Ruhephasen."
+      },
+      "therapeutichelp" : {
+        "example" : "Will nicht zum Arzt. Nimmt Medikamente nicht. Wehrt sich bei Untersuchungen. Bleibt nie angeschnallt im Auto.",
+        "question" : "Der Pflegebedürftige weht sich gegen therapeutische und schützende Maßnahmen.",
+        "short" : "Therapeutische und schützende Maßnahmen",
+        "text" : "Wehrt sich der Pflegebedürftige gegen Arztbesuche, Medikamente? Manchmal können altersverwirrte Menschen die Wichtigkeit dieser Maßnahmen nicht mehr erkennen. Oder Sie haben Angst und weigern sich deshalb. Jedoch sind diese Dinge wichtig und notwendig für die Gesundheit und Versorgung."
+      }
+    }
+  },
+  "families" : {
+    "-JVkg6AD6lMr34ykyly9" : {
+      "care" : {
+        "activities" : {
+          "date" : {
+            "2014-09-08" : {
+              "-JX8EVN6mMXlnsI6j9lr" : {
+                "activity" : {
+                  "id" : "eatbitesize",
+                  "title" : "Mundgerechte Zubereitung"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "31",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              "-JX8GsU9OkIWNZ4YxOBc" : {
+                "activity" : {
+                  "id" : "wheelchair",
+                  "title" : "Rollstuhl (Aufstehen/Hineinsetzen)"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "28",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5898854E12
+            },
+            "2014-09-10" : {
+              "-JX8EbGcEdiuHbhHB3cx" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "22",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5897126E12
+            },
+            "2014-09-11" : {
+              "-JWzpF_vryThmY7CMSQR" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "14",
+                "note" : "last thursday",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              "-JX-CBHFwDQZgDPetjq8" : {
+                "activity" : {
+                  "id" : "movehouse",
+                  "title" : "Bewegen im Haus"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "night",
+                "hours" : 0,
+                "minutes" : "60",
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:5"
+              },
+              "-JX-Cg-dB0yph7S32-M8" : {
+                "activity" : {
+                  "id" : "eatassist",
+                  "title" : "Essen und Trinken reichen"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "39",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              "-JX1_SVPGeXds_kkQlbB" : {
+                "activity" : {
+                  "id" : "eatassist",
+                  "title" : "Essen und Trinken reichen"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "20",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5896262E12
+            },
+            "2014-09-12" : {
+              "-JX8Dun8uTnmYeVr2ToJ" : {
+                "activity" : {
+                  "id" : "stairclimbing",
+                  "title" : "Treppensteigen"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "19",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5895398E12
+            },
+            "2014-09-13" : {
+              "-JX8EsQVqqPeguyG6_FM" : {
+                "activity" : {
+                  "id" : "washiron",
+                  "title" : "Waschen und Bügeln"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "27",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5894534E12
+            },
+            "2014-09-15" : {
+              "-JXCNgtDzn49niFMghWs" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "8",
+                "note" : "3",
+                "type" : "full",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5892806E12
+            },
+            "2014-09-17" : {
+              "-JX1aB19aDr-B29J4prn" : {
+                "activity" : {
+                  "id" : "dressing",
+                  "title" : "An- und Auskleiden"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "midday",
+                "hours" : 1,
+                "minutes" : "55",
+                "note" : "note from FB3",
+                "type" : "full",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.589059693937E12
+            },
+            "2014-09-19" : {
+              "-JX8Gxsw_BGqwZPwBecN" : {
+                "activity" : {
+                  "id" : "washup",
+                  "title" : "Spülen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : "",
+                "minutes" : "29",
+                "note" : "test",
+                "type" : "support",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.588877030637E12
+            },
+            "2014-10-07" : {
+              ".priority" : 8.5873798E12
+            },
+            "2014-10-08" : {
+              "-JYj_eOJunjFK679-eaU" : {
+                "activity" : {
+                  "id" : "washiron",
+                  "title" : "Waschen und Bügeln"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "30",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:5"
+              },
+              "-JYj_mFjZ2Z7A__rrBM_" : {
+                "activity" : {
+                  "id" : "eatbitesize",
+                  "title" : "Mundgerechte Zubereitung"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "31",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              "-JYjaLYlAztV2Gx_vBmV" : {
+                "activity" : {
+                  "id" : "bedgoto",
+                  "title" : "Zubettgehen"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "27",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              "-JYvOOvrmMbgoADSLVuR" : {
+                "activity" : {
+                  "id" : "bedgoto",
+                  "title" : "Zubettgehen"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : 20,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5872934E12
+            },
+            "2014-10-09" : {
+              "-JYvPIqf7c42WcArMd66" : {
+                "activity" : {
+                  "id" : "wheelchair",
+                  "title" : "Rollstuhl (Aufstehen/Hineinsetzen)"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "night",
+                "hours" : 0,
+                "minutes" : "13",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.587207E12
+            },
+            "2014-10-10" : {
+              ".priority" : 8.5871206E12
+            },
+            "2014-10-11" : {
+              "-JYvM_pGCu9mxmEeAqir" : {
+                "activity" : {
+                  "id" : "standing",
+                  "title" : "Stehen"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "40",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              "-JYvMsn5sSGtXFcQfxlo" : {
+                "activity" : {
+                  "id" : "eatassist",
+                  "title" : "Essen und Trinken reichen"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "night",
+                "hours" : 0,
+                "minutes" : 33,
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.587032836155E12
+            },
+            "2014-10-14" : {
+              ".priority" : 8.586775E12
+            },
+            "2014-10-18" : {
+              "-JZXmoQXqd3INxYmKOm1" : {
+                "activity" : {
+                  "id" : "urination",
+                  "title" : "Blasenentleerung"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "40",
+                "note" : "",
+                "type" : "oversee",
+                "user" : "simplelogin:5"
+              },
+              "-JZqbdqlcwC4vAp52d12" : {
+                "activity" : {
+                  "id" : "movehouse",
+                  "title" : "Bewegen im Haus"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : 0,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:5"
+              },
+              "-JZqc-Nm5cdd5QWRzrIO" : {
+                "activity" : {
+                  "id" : "dentalcare",
+                  "title" : "Mund-/Zahnpflege"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "36",
+                "note" : "",
+                "type" : "oversee",
+                "user" : "simplelogin:5"
+              },
+              "-JZqepbgu3kMRWQzS0Fq" : {
+                "activity" : {
+                  "id" : "accompany",
+                  "title" : "Begleitung (z. B. zum Arzt)"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "20",
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:5"
+              },
+              "-JZrANXuhVUpuQfCVx5G" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "26",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:5"
+              },
+              "-JZrARFgmONjVTSNRji-" : {
+                "activity" : {
+                  "id" : "position",
+                  "title" : "Lagerung"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "21",
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:5"
+              },
+              "-JZrATil5Xo3DNLOBVM5" : {
+                "activity" : {
+                  "id" : "urination",
+                  "title" : "Blasenentleerung"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "34",
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:5"
+              },
+              ".priority" : 8.5864294E12
+            }
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-08T07:27:28.007Z",
+          "current" : "completed",
+          "last" : "initialized"
+        }
+      },
+      "competency" : {
+        "answers" : {
+          "adaptiontosituation" : {
+            "changed" : "2014-10-21T09:18:50.219Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "agressiveness" : {
+            "changed" : "2014-10-21T09:18:50.226Z",
+            "note" : "aggression notice",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "dailyactivities" : {
+            "changed" : "2014-10-21T09:18:50.228Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "dailyrecognition" : {
+            "changed" : "2014-10-21T09:18:50.230Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "dailystructure" : {
+            "changed" : "2014-10-21T09:18:50.233Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "dangeroussituations" : {
+            "changed" : "2014-10-21T09:18:50.236Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "daynightrythm" : {
+            "changed" : "2014-10-21T09:18:50.239Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "depression" : {
+            "changed" : "2014-10-21T09:18:50.241Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "emotionalvibe" : {
+            "changed" : "2014-10-21T09:18:50.244Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "hazardousthings" : {
+            "changed" : "2014-10-21T09:18:50.246Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "leavingflat" : {
+            "changed" : "2014-10-21T09:18:50.248Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "null" : {
+            "changed" : "2014-10-21T09:18:50.251Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "ownneeds" : {
+            "changed" : "2014-10-21T09:18:50.254Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          },
+          "therapeutichelp" : {
+            "changed" : "2014-10-21T09:18:50.256Z",
+            "note" : "",
+            "option" : "never",
+            "user" : "simplelogin:5"
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-21T09:18:06.809Z",
+          "current" : "completed",
+          "last" : "completed"
+        }
+      },
+      "familyname" : "Familie -JVkg6AD6lMr34ykyly9",
+      "medication" : {
+        "state" : {
+          "changed" : "2014-09-03T12:35:43.037Z",
+          "current" : "initialised",
+          "last" : false
+        }
+      },
+      "printout" : {
+        "milestones" : {
+          "next" : {
+            "printreqesttoprint" : {
+              ".priority" : 1.0,
+              "description" : "A first time request for a printout for a family's care-giver",
+              "title" : "Requesting to print out a protocol"
+            },
+            "printreqesttoprint5x" : {
+              ".priority" : 2.0,
+              "description" : "The 5th request for a printout for a family's care-giver",
+              "title" : "Requesting to print out a protocol 5 times"
+            }
+          }
+        }
+      },
+      "users" : {
+        "simplelogin:5" : {
+          "favorites" : {
+            "bath" : {
+              ".priority" : 1.413640797024E12,
+              "title" : "Baden"
+            },
+            "clothprepare" : {
+              ".priority" : 1.413640859203E12,
+              "title" : "Kleidung richten"
+            },
+            "defecation" : {
+              ".priority" : 1.413641770715E12,
+              "title" : "Darmentleerung"
+            },
+            "incontinencechange" : {
+              ".priority" : 1.413641668789E12,
+              "title" : "Inkontinenzartikel wechseln"
+            },
+            "intimatecare" : {
+              ".priority" : 1.413641331454E12,
+              "title" : "Intimpflege"
+            }
+          }
+        }
+      }
+    },
+    "-JWeZNA7aer5qv7c6OqA" : {
+      "care" : {
+        "state" : {
+          "changed" : "2014-09-12T15:53:10.894Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "competency" : {
+        "state" : {
+          "changed" : "2014-09-12T15:53:10.894Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "familyname" : "Familie -JWeZNA7aer5qv7c6OqA",
+      "medication" : {
+        "state" : {
+          "changed" : "2014-09-12T15:53:10.894Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "printout" : {
+        "state" : {
+          "changed" : "2014-09-12T15:53:10.894Z",
+          "current" : "initialised",
+          "last" : false
+        }
+      },
+      "tip" : {
+        "state" : {
+          "changed" : "2014-09-12T15:53:10.894Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "users" : {
+        "simplelogin:37" : true
+      }
+    },
+    "-JXfeWoZxGif2gW6PJGc" : {
+      "care" : {
+        "activities" : {
+          "date" : {
+            "2014-10-07" : {
+              "-JYfA2_hL5JpLsDsqM2c" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "5",
+                "note" : "test entry",
+                "type" : "support",
+                "user" : "simplelogin:4"
+              },
+              "-JYfAEgaTC6H9n-_-ZiR" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "7",
+                "note" : "Another",
+                "type" : "oversee",
+                "user" : "simplelogin:4"
+              },
+              ".priority" : 8.587305147034E12
+            }
+          }
+        },
+        "difficulties" : {
+          "contractures" : {
+            ".priority" : 2.0,
+            "changed" : "2014-10-09T07:50:06.455Z",
+            "notes" : "try to change",
+            "title" : "Kontrakturen",
+            "user" : "simplelogin:4"
+          },
+          "defense" : {
+            ".priority" : 1.0,
+            "changed" : "2014-10-09T07:51:09.791Z",
+            "notes" : "take",
+            "title" : "Abwehrverhalten des Pflegebedürftigen",
+            "user" : "simplelogin:4"
+          },
+          "dysphagia" : {
+            ".priority" : 6.0,
+            "changed" : "2014-10-10T09:43:41.292Z",
+            "notes" : "New way of adding",
+            "title" : "Schluckstörungen",
+            "user" : "simplelogin:4"
+          },
+          "pain" : {
+            ".priority" : 4.0,
+            "changed" : "2014-10-09T07:55:17.461Z",
+            "notes" : "changed",
+            "title" : "Starke therapieresistente Schmerzen",
+            "user" : "simplelogin:4"
+          },
+          "weight" : {
+            ".priority" : 1.0,
+            "changed" : "2014-10-10T10:26:59.701Z",
+            "notes" : "Entry edited",
+            "title" : "Hohes Körpergewicht des Pflegebedürftigen (über 80 kg)",
+            "user" : "simplelogin:4"
+          }
+        },
+        "state" : {
+          "changed" : "2014-09-25T07:36:02.105Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "competency" : {
+        "answers" : {
+          "adaptiontosituation" : {
+            "changed" : "2014-10-08T10:15:53.105Z",
+            "note" : "hello",
+            "option" : "frequently",
+            "user" : "simplelogin:4"
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-08T10:15:54.148Z",
+          "current" : "viewed",
+          "last" : "initialized"
+        }
+      },
+      "familyname" : "Familie -JXfeWoZxGif2gW6PJGc",
+      "medication" : {
+        "drugs" : {
+          "-JYiLmniQIXwkKdilu_2" : {
+            "application" : "tablet",
+            "chargedosage" : "carerecipient",
+            "chargeprescription" : "carerecipient",
+            "chargetaking" : "carerecipient",
+            "dosage" : 1,
+            "evening" : 0,
+            "help" : "false",
+            "midday" : 0,
+            "morning" : 1,
+            "night" : 0,
+            "notes" : "Modal dialog already in place!",
+            "title" : "First Med"
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-08T06:03:51.025Z",
+          "current" : "viewed",
+          "last" : "initialized"
+        }
+      },
+      "printout" : {
+        "state" : {
+          "changed" : "2014-09-25T07:36:02.105Z",
+          "current" : "initialised",
+          "last" : false
+        }
+      },
+      "tip" : {
+        "state" : {
+          "changed" : "2014-09-25T07:36:02.105Z",
+          "current" : "initialized",
+          "last" : false
+        }
+      },
+      "users" : {
+        "simplelogin:4" : {
+          "name" : "Anisur.mullick"
+        }
+      }
+    },
+    "knapp" : {
+      "care" : {
+        "activities" : {
+          "date" : {
+            "2014-09-02" : {
+              "-JXEI0I_q78VKrVDodCZ" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "15",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.5903912E12
+            },
+            "2014-09-13" : {
+              "-JXCqdIyYktnrGCjV5Ia" : {
+                "activity" : {
+                  "id" : "wheelchair",
+                  "title" : "Rollstuhl (Aufstehen/Hineinsetzen)"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "6",
+                "note" : "",
+                "type" : "oversee",
+                "user" : "simplelogin:2"
+              },
+              "-JXCqfbEw0KRoJXHZVvk" : {
+                "activity" : {
+                  "id" : "shower",
+                  "title" : "Duschen"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "31",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.5894408E12
+            },
+            "2014-09-14" : {
+              "-JXCqLHUZe6rYT6bXl4_" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "20",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXCqNvjvcl6FFDuAuVO" : {
+                "activity" : {
+                  "id" : "dressing",
+                  "title" : "An- und Auskleiden"
+                },
+                "category" : {
+                  "id" : "mobility",
+                  "title" : "Mobilität"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "11",
+                "note" : "",
+                "type" : "oversee",
+                "user" : "simplelogin:2"
+              },
+              "-JXCqTOPgd34GPE6zPN4" : {
+                "activity" : {
+                  "id" : "washup",
+                  "title" : "Spülen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "16",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JXCqXQb93lgr7Z_3vbl" : {
+                "activity" : {
+                  "id" : "eatassist",
+                  "title" : "Essen und Trinken reichen"
+                },
+                "category" : {
+                  "id" : "nutrition",
+                  "title" : "Ernährung"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "34",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.5893544E12
+            },
+            "2014-09-15" : {
+              "-JWwqKGHxHycc7uHZfcH" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "12",
+                "note" : "Priority",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JWwrP5UJmyn6Ocuz8DM" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "10",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JWwsIr6P2DPaVnithul" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "19",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXECe1WvcYjYE2d8q7Q" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "19",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.589193974477E12
+            },
+            "2014-09-16" : {
+              "-JWwr6Z9rGX8-QnuQNcI" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "11",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JWwsBlOIKb4XrmrkyEe" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "22",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXEHjRu_7ztclKNqFhU" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "26",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.589107574477E12
+            },
+            "2014-09-17" : {
+              "-JX2B1JGDsbmZZK7AQrL" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "19",
+                "note" : "sdfsdf",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JX2NHLQBZ54GxobtStt" : {
+                "activity" : {
+                  "id" : "shower",
+                  "title" : "Duschen"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : 17,
+                "note" : "part",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JX2rg7wUY_qlYWAA1mq" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : "21",
+                "note" : "wsdf",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JX2sb-AHN5yqmOFVCV8" : {
+                "activity" : {
+                  "id" : "washiron",
+                  "title" : "Waschen und Bügeln"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : 28,
+                "note" : "Geht sehr gut",
+                "type" : "oversee",
+                "user" : "simplelogin:2"
+              },
+              "-JX2z-0DCUQUWmuehGep" : {
+                "activity" : {
+                  "id" : "beddingchange",
+                  "title" : "Wechsel der Wäsche"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "",
+                "hours" : 0,
+                "minutes" : 0,
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:2"
+              },
+              "-JX81mqiZO9QqqIGhx30" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "",
+                "hours" : 0,
+                "minutes" : "33",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:2"
+              },
+              "-JXEBO9yRDtRhZZfum6G" : {
+                "activity" : {
+                  "id" : "dentalcare",
+                  "title" : "Mund-/Zahnpflege"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "19",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JXEGlOyBMiKt-fHQzCr" : {
+                "activity" : {
+                  "id" : "shower",
+                  "title" : "Duschen"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "20",
+                "note" : "",
+                "type" : "coach",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.589021174477E12
+            },
+            "2014-09-18" : {
+              "-JX78JCBQzPvz7FF4VcI" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "15",
+                "note" : "data",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JX832ZxgiKlN1e4SwCk" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "",
+                "hours" : 0,
+                "minutes" : "15",
+                "note" : "Hallo",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JX8JfQTwuNxu833ppFp" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "23",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.588946525887E12
+            },
+            "2014-09-19" : {
+              "-JXCLOheyeamAeloJsM7" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "20",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JXCLUE0eGISBtX6gUrU" : {
+                "activity" : {
+                  "id" : "dentalcare",
+                  "title" : "Mund-/Zahnpflege"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "9",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.588879299563E12
+            },
+            "2014-09-22" : {
+              "-JXSnXDI-zUwxzD3BZi9" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "3",
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXSpdmInlwZymrDOxBL" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXSqcSxQC4nxvEOHUOk" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.588602067852E12
+            },
+            "2014-09-23" : {
+              "-JXW8tR9c9-HQkgZphQR" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JXW9CguqskSqWZ3LNnL" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 1,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JXWPkE4YLM3oyyTm_e_" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : 3,
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              "-JXWcgrRaYZM2OQ9NoVb" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "evening",
+                "hours" : 0,
+                "minutes" : 5,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXWsfIo9uNQ9n5tMYAW" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "",
+                "hours" : 0,
+                "minutes" : 3,
+                "note" : "",
+                "type" : "",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-TsHnKITHFo8E5Zz" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-Ttyc2oWHw3_FwrU" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-Tu6Ah4utG5m0ITl" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 4,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-TuCPKk-PDCFPj-B" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 6,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-TuIn5_-fu8IX5dG" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 6,
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-JXX-pDcy1_7v-gMrq38" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "night",
+                "hours" : 0,
+                "minutes" : 7,
+                "note" : "",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.588532889253E12
+            },
+            "2014-09-24" : {
+              "-JXcJKITwnQLnEcAfYS4" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "27",
+                "note" : "test",
+                "type" : "support",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.588427042062E12
+            },
+            "2014-10-04" : {
+              "-JYQNy7Mlx-5I6IM5vBS" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "dayslice" : "morning",
+                "minutes" : 23,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7TFzRZ-wCeVk3R" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "dayslice" : "midday",
+                "minutes" : 15,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7VPhzRJ2JkKjzL" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "dayslice" : "evening",
+                "minutes" : 18,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7VPhzRJ2JkKjzM" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "dayslice" : "night",
+                "minutes" : 29,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7YM-LGteSm18fa" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "dayslice" : "morning",
+                "minutes" : 13,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7ZmU9yXRyTIYx9" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "dayslice" : "morning",
+                "minutes" : 28,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7agXHEo59Ac6Oi" : {
+                "activity" : {
+                  "id" : "washfull",
+                  "title" : "Ganzkörperwäsche"
+                },
+                "dayslice" : "night",
+                "minutes" : 29,
+                "user" : "simplelogin:2"
+              },
+              "-JYQNy7bOt1FYj6CJw2g" : {
+                "activity" : {
+                  "id" : "washpart",
+                  "title" : "Teilwäsche"
+                },
+                "dayslice" : "evening",
+                "minutes" : 12,
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.587571714566E12
+            },
+            "2014-10-14" : {
+              "-JZJJbJqfy4_DaS31J1P" : {
+                "activity" : {
+                  "id" : "cleaning",
+                  "title" : "Wohnung reinigen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : 14,
+                "note" : "asfd",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.586701233717E12
+            },
+            "2014-10-15" : {
+              ".priority" : 8.586614833717E12
+            },
+            "2014-10-23" : {
+              "-JZxZ5e2d4TnWWD9J1l-" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "18",
+                "note" : "",
+                "type" : "full",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.585922924633E12
+            },
+            "2014-10-24" : {
+              "-J_0NmwXvHGnWTDQSWVr" : {
+                "activity" : {
+                  "id" : "cooking",
+                  "title" : "Kochen"
+                },
+                "category" : {
+                  "id" : "household",
+                  "title" : "Haushalt"
+                },
+                "dayslice" : "midday",
+                "hours" : 0,
+                "minutes" : "34",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              "-J_18tKaUW138UtogpWK" : {
+                "activity" : {
+                  "id" : "shower",
+                  "title" : "Duschen"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "25",
+                "note" : "",
+                "type" : "oversee",
+                "user" : "simplelogin:2"
+              },
+              "-J_1AS31HuYNexh0Tbg1" : {
+                "activity" : {
+                  "id" : "dentalcare",
+                  "title" : "Mund-/Zahnpflege"
+                },
+                "category" : {
+                  "id" : "body",
+                  "title" : "Körperpflege"
+                },
+                "dayslice" : "morning",
+                "hours" : 0,
+                "minutes" : "12",
+                "note" : "",
+                "type" : "partial",
+                "user" : "simplelogin:2"
+              },
+              ".priority" : 8.585845564756E12
+            }
+          }
+        },
+        "difficulties" : {
+          "blindness" : {
+            ".priority" : 11.0,
+            "changed" : "2014-10-09T09:11:23.023Z",
+            "notes" : "zdc",
+            "title" : "Blindheit",
+            "user" : "simplelogin:2"
+          },
+          "mechanicaldigestion" : {
+            ".priority" : 10.0,
+            "changed" : "2014-10-10T10:55:45.991Z",
+            "notes" : "test",
+            "title" : "Erforderlichkeit der mechanischen Harnlösung oder der digitalen Enddarmentleerung",
+            "user" : "simplelogin:2"
+          },
+          "pain" : {
+            ".priority" : 4.0,
+            "changed" : "2014-10-09T09:14:10.002Z",
+            "notes" : "zdc",
+            "title" : "Starke therapieresistente Schmerzen",
+            "user" : "simplelogin:2"
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-07T14:23:39.588Z",
+          "current" : "completed",
+          "last" : "completed"
+        }
+      },
+      "competency" : {
+        "answers" : {
+          "adaptiontosituation" : {
+            "changed" : "2014-09-24T15:15:48.919Z",
+            "note" : "test",
+            "option" : "never",
+            "user" : "simplelogin:2"
+          },
+          "agressiveness" : {
+            "changed" : "2014-09-24T15:15:48.922Z",
+            "note" : "",
+            "option" : "frequently",
+            "user" : "dakna"
+          },
+          "dailyactivities" : {
+            "changed" : "2014-09-24T15:15:48.924Z",
+            "note" : "Dings",
+            "option" : "never",
+            "user" : "dakna"
+          },
+          "dailyrecognition" : {
+            "changed" : "2014-09-24T15:15:48.926Z",
+            "note" : "Bin",
+            "option" : "occasionally",
+            "user" : "dakna"
+          },
+          "dailystructure" : {
+            "changed" : "2014-09-24T15:15:48.929Z",
+            "note" : "",
+            "option" : "frequently",
+            "user" : "dakna"
+          },
+          "dangeroussituations" : {
+            "changed" : "2014-09-24T15:15:48.931Z",
+            "note" : "",
+            "option" : "occasionally",
+            "user" : "dakna"
+          },
+          "daynightrythm" : {
+            "changed" : "2014-09-24T15:15:48.933Z",
+            "note" : "Dgb",
+            "option" : "never",
+            "user" : "dakna"
+          },
+          "depression" : {
+            "changed" : "2014-09-24T15:15:48.936Z",
+            "note" : "",
+            "option" : "seldom",
+            "user" : "dakna"
+          }
+        },
+        "state" : {
+          "changed" : "2014-09-24T15:14:34.993Z",
+          "current" : "viewed",
+          "last" : "viewed"
+        }
+      },
+      "familyname" : "Familie Knapp",
+      "items" : {
+        "bike" : {
+          ".priority" : 5.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "bike.svg",
+          "user" : "simplelogin:2"
+        },
+        "hedge" : {
+          ".priority" : 4.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "hedge.svg",
+          "user" : "simplelogin:2"
+        },
+        "terrace" : {
+          ".priority" : 7.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "terrace.svg",
+          "user" : "simplelogin:2"
+        },
+        "tree" : {
+          ".priority" : 18.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "tree.svg",
+          "user" : "simplelogin:2"
+        },
+        "way" : {
+          ".priority" : 2.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "way.svg",
+          "user" : "simplelogin:2"
+        },
+        "wayflower" : {
+          ".priority" : 6.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "wayflower.svg",
+          "user" : "simplelogin:2"
+        },
+        "windowdecoration" : {
+          ".priority" : 1.0,
+          "created" : "2014-09-15T16:21:09.942Z",
+          "filename" : "windowdecoration.svg",
+          "user" : "simplelogin:2"
+        }
+      },
+      "medication" : {
+        "drugs" : {
+          "-JX94Q69Rtj8sDmDueD8" : {
+            "application" : "syrup",
+            "chargedosage" : "nurse",
+            "chargeprescription" : "nurse",
+            "chargetaking" : "nurse",
+            "dosage" : 1,
+            "evening" : 0,
+            "help" : "partial",
+            "midday" : 0,
+            "morning" : "1",
+            "night" : 0,
+            "notes" : "",
+            "title" : "Paracetamol"
+          },
+          "-JX9C0iSjZw8wWeSKnbF" : {
+            "application" : "cream",
+            "chargedosage" : "other",
+            "chargeprescription" : "nurse",
+            "chargetaking" : "nurse",
+            "dosage" : 1,
+            "evening" : 0,
+            "help" : "support",
+            "midday" : 0,
+            "morning" : "1",
+            "night" : 0,
+            "notes" : "",
+            "title" : "Aspirin"
+          },
+          "-JXcNfLOyCkg7sJ4tFjD" : {
+            "application" : "tablet",
+            "chargedosage" : "caregiver",
+            "chargeprescription" : "carerecipient",
+            "chargetaking" : "carerecipient",
+            "dosage" : "1.25",
+            "evening" : 0,
+            "help" : "partial",
+            "midday" : 0,
+            "morning" : 1,
+            "night" : "2",
+            "notes" : "Take regular",
+            "title" : "Test Med"
+          },
+          "-JYuGFlkSqOpwY0TuKjR" : {
+            "application" : "syrup",
+            "chargedosage" : "carerecipient",
+            "chargeprescription" : "carerecipient",
+            "chargetaking" : "carerecipient",
+            "dosage" : 1,
+            "evening" : 0,
+            "help" : "coach",
+            "midday" : 0,
+            "morning" : "1",
+            "night" : 0,
+            "notes" : "notes",
+            "title" : "Test medicine"
+          }
+        },
+        "state" : {
+          "changed" : "2014-10-10T13:35:03.086Z",
+          "current" : "viewed",
+          "last" : "completed"
+        }
+      },
+      "printout" : {
+        "milestones" : {
+          "completed" : {
+            "printreqesttoprint" : {
+              ".priority" : 1.0,
+              "description" : "A first time request for a printout for a family's care-giver",
+              "title" : "Requesting to print out a protocol"
+            }
+          },
+          "next" : {
+            "printreqesttoprint5x" : {
+              ".priority" : 2.0,
+              "description" : "The 5th request for a printout for a family's care-giver",
+              "title" : "Requesting to print out a protocol 5 times"
+            }
+          }
+        },
+        "requests" : {
+          "-JWu8ZBfcS6nvff6Wovv" : {
+            "created" : "2014-09-15T16:29:58.596Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-15T16:29:54.758Z",
+                "start" : "2014-09-15T16:29:54.758Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-15T16:29:59.257Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JXTlP5Cv9vlEshUrQ5r" : {
+            "created" : "2014-09-22T19:10:26.116Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-22T19:10:17.345Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-22T19:10:26.920Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JXTm6f-Csmzuxn14VRl" : {
+            "created" : "2014-09-22T19:13:32.790Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-22T19:10:17.345Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-22T19:13:42.428Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JXTmaM5cPGvpJhNBGCU" : {
+            "created" : "2014-09-22T19:15:38.493Z",
+            "filename" : "1411413341664-116326ac9cfd75d1d6ed77fb0a07c4d2483cbff095fa278415908f2867be128d.pdf",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-22T19:10:17.345Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-22T19:16:02.305Z",
+              "current" : "generated",
+              "last" : "prepared"
+            }
+          },
+          "-JXTxBdE5zu77ZzzIDXh" : {
+            "created" : "2014-09-22T20:01:56.743Z",
+            "filename" : "1411416119729-5d2d48fb3797e3815e37b8a5031c34e18e2112557d976ee1182898632cee6145.pdf",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-22T19:10:17.345Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-22T20:02:20.243Z",
+              "current" : "generated",
+              "last" : "prepared"
+            }
+          },
+          "-JXTyJio5c3U4xQPptlM" : {
+            "created" : "2014-09-22T20:06:52.012Z",
+            "filename" : "1411416415050-172c16fa3f779ae6cd4a44d7664d438c296a1a3b39c3519b7abaea04ffc673d8.pdf",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-09-22T19:10:17.345Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-09-22T20:07:15.540Z",
+              "current" : "generated",
+              "last" : "prepared"
+            }
+          },
+          "-JZXlv_ipYdFQ8ZZerdB" : {
+            "created" : "2014-10-18T10:22:37.945Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-10-18T10:22:30.103Z",
+                "start" : "2014-10-18T10:22:30.103Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T10:22:48.894Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JZY6umrgeXI8TfycHH6" : {
+            "created" : "2014-10-18T11:58:40.897Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T11:58:50.066Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JZY8d82drobmc5f-Byr" : {
+            "created" : "2014-10-18T12:06:12.759Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T12:06:16.113Z",
+              "current" : "requested",
+              "last" : "initialised"
+            }
+          },
+          "-JZYViwAs_vpY_THOSla" : {
+            "created" : "2014-10-18T13:47:04.446Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-10-18T13:46:58.660Z",
+                "start" : "2014-10-18T13:46:58.660Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T13:47:04.446Z",
+              "current" : "initialised",
+              "last" : false
+            }
+          },
+          "-JZYZkuQR0eBqTflZfG3" : {
+            "created" : "2014-10-18T14:04:41.103Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-10-18T13:46:58.660Z",
+                "start" : "2014-10-18T13:46:58.660Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T14:04:41.103Z",
+              "current" : "initialised",
+              "last" : false
+            }
+          },
+          "-JZYa5KRsmo_QVd_qkBY" : {
+            "created" : "2014-10-18T14:10:30.992Z",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-10-18T13:46:58.660Z",
+                "start" : "2014-10-18T13:46:58.660Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T14:10:30.992Z",
+              "current" : "initialised",
+              "last" : false
+            }
+          },
+          "-JZYaZoPxfTDCV7BqkDv" : {
+            "created" : "2014-10-18T14:12:35.530Z",
+            "filename" : "1413641558644-44f0f03f880debd4d884ac32b99d1c21ff4b891227b6f0671d9d8c58351d9e81.pdf",
+            "payload" : {
+              "sections" : {
+                "care" : true,
+                "competency" : true,
+                "medication" : true
+              },
+              "timeframe" : {
+                "end" : "2014-10-18T14:12:32.865Z",
+                "start" : "2014-10-18T14:12:32.865Z"
+              }
+            },
+            "state" : {
+              "changed" : "2014-10-18T14:12:59.140Z",
+              "current" : "generated",
+              "last" : "prepared"
+            }
+          }
+        },
+        "state" : {
+          "changed" : "2014-09-03T12:35:43.037Z",
+          "current" : "initialised",
+          "last" : false
+        }
+      },
+      "users" : {
+        "simplelogin:2" : {
+          "favorites" : {
+            "bath" : {
+              ".priority" : 1.412947535039E12,
+              "title" : "Baden"
+            },
+            "clothprepare" : {
+              ".priority" : 7.0,
+              "title" : "Kleidung richten"
+            },
+            "defecation" : {
+              ".priority" : 1.413576796798E12,
+              "title" : "Darmentleerung"
+            },
+            "dentalcare" : {
+              ".priority" : 3.0,
+              "title" : "Mund-/Zahnpflege"
+            },
+            "incontinencechange" : {
+              ".priority" : 1.413576825882E12,
+              "title" : "Inkontinenzartikel wechseln"
+            },
+            "shower" : {
+              ".priority" : 4.0,
+              "title" : "Duschen"
+            },
+            "washfull" : {
+              "title" : "Ganzkörperwäsche"
+            },
+            "washpart" : {
+              ".priority" : 8.0,
+              "title" : "Teilwäsche"
+            }
+          },
+          "name" : "dakna"
+        }
+      }
+    }
+  },
+  "gamification" : {
+    "items" : {
+      "bank" : {
+        ".priority" : 16.0,
+        "filename" : "bank.svg"
+      },
+      "bike" : {
+        ".priority" : 5.0,
+        "filename" : "bike.svg"
+      },
+      "butterfly" : {
+        ".priority" : 20.0,
+        "filename" : "butterfly.svg"
+      },
+      "chimney" : {
+        ".priority" : 21.0,
+        "filename" : "chimney.svg"
+      },
+      "firstfloor" : {
+        ".priority" : 8.0,
+        "filename" : "firstfloor.svg"
+      },
+      "flowerathouse" : {
+        ".priority" : 3.0,
+        "filename" : "flowerathouse.svg"
+      },
+      "flowerbox" : {
+        ".priority" : 9.0,
+        "filename" : "flowerbox.svg"
+      },
+      "grill" : {
+        ".priority" : 19.0,
+        "filename" : "grill.svg"
+      },
+      "hedge" : {
+        ".priority" : 4.0,
+        "filename" : "hedge.svg"
+      },
+      "mailbox" : {
+        ".priority" : 12.0,
+        "filename" : "mailbox.svg"
+      },
+      "pillow" : {
+        ".priority" : 17.0,
+        "filename" : "pillow.svg"
+      },
+      "rockingchair" : {
+        ".priority" : 23.0,
+        "filename" : "rockingchair.svg"
+      },
+      "shade" : {
+        ".priority" : 22.0,
+        "filename" : "shade.svg"
+      },
+      "shingle" : {
+        ".priority" : 11.0,
+        "filename" : "shingle.svg"
+      },
+      "shinglecoloured" : {
+        ".priority" : 15.0,
+        "filename" : "shinglecoloured.svg"
+      },
+      "stucco" : {
+        ".priority" : 14.0,
+        "filename" : "stucco.svg"
+      },
+      "terrace" : {
+        ".priority" : 7.0,
+        "filename" : "terrace.svg"
+      },
+      "tree" : {
+        ".priority" : 18.0,
+        "filename" : "tree.svg"
+      },
+      "wateringcan" : {
+        ".priority" : 10.0,
+        "filename" : "wateringcan.svg"
+      },
+      "way" : {
+        ".priority" : 2.0,
+        "filename" : "way.svg"
+      },
+      "wayflower" : {
+        ".priority" : 6.0,
+        "filename" : "wayflower.svg"
+      },
+      "windmill" : {
+        ".priority" : 13.0,
+        "filename" : "windmill.svg"
+      },
+      "windowdecoration" : {
+        ".priority" : 1.0,
+        "filename" : "windowdecoration.svg"
+      }
+    }
+  },
+  "users" : {
+    "anisurmullick" : {
+      "email" : "anisur.mullick@gmail.com",
+      "families" : {
+        "-JVQn0yzGWh8PoKr_Udo" : true
+      },
+      "name" : "Anisur.mullick",
+      "role" : "user"
+    },
+    "dakna" : {
+      "email" : "dakna@web.de",
+      "families" : {
+        "knapp" : {
+          "name" : "Family Knapp"
+        }
+      },
+      "name" : "Dakna",
+      "role" : "user"
+    },
+    "simplelogin:2" : {
+      "email" : "dakna@web.de",
+      "families" : {
+        "knapp" : {
+          "name" : "Knapp"
+        }
+      },
+      "family" : "knapp",
+      "name" : "dakna",
+      "role" : "admin"
+    },
+    "simplelogin:37" : {
+      "email" : "test@test.com",
+      "families" : {
+        "-JWeZNA7aer5qv7c6OqA" : true
+      },
+      "name" : "Test",
+      "role" : "user"
+    },
+    "simplelogin:4" : {
+      "email" : "anisur.mullick@netzrezepte.de",
+      "families" : {
+        "-JXfeWoZxGif2gW6PJGc" : {
+          "name" : "Some name"
+        },
+        "knapp" : {
+          "name" : "Knapp"
+        }
+      },
+      "family" : "-JXfeWoZxGif2gW6PJGc",
+      "name" : "Anisur.mullick",
+      "role" : "user"
+    },
+    "simplelogin:5" : {
+      "email" : "siddhartha.mandal@netzrezepte.de",
+      "families" : {
+        "-JVkg6AD6lMr34ykyly9" : true
+      },
+      "family" : "-JVkg6AD6lMr34ykyly9",
+      "name" : "Siddhartha.mandal",
+      "role" : "admin"
+    }
+  }
+}

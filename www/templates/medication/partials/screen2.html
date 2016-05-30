@@ -1,0 +1,51 @@
+
+<div class="list padding-vertical">
+  <div class="item item-divider pp-item-divider">
+    Who is in charge of the prescriptions?
+    <span ng-show="showError && frmAddEditEntry.prescription.$invalid">
+     <i class="icon ion-alert-circled error"></i>
+     <span ng-show="frmAddEditEntry.prescription.$error.required">{{ 'MEDICATION_ERR_PRESCRIPTION' | translate }}</span>
+    </span>
+  </div>
+  <ion-radio name="prescription" ng-repeat="prescription in incharges" ng-value="prescription.key" ng-model="currentEntry.chargeprescription" required="required">
+    {{ prescription.text | translate }}
+  </ion-radio>
+</div>
+
+<div class="list padding-vertical">
+  <div class="item item-divider pp-item-divider">
+    Who is in charge of dosage and preparation?
+    <span ng-show="showError && frmAddEditEntry.dosage.$invalid">
+         <i class="icon ion-alert-circled error"></i>
+         <span ng-show="frmAddEditEntry.dosage.$error.required">{{ 'MEDICATION_ERR_DOSAGE' | translate }}</span>
+        </span>
+  </div>
+  <ion-radio name="dosage" ng-repeat="dosage in incharges" ng-value="dosage.key" ng-model="currentEntry.chargedosage" required="required">
+    {{ dosage.text | translate }}
+  </ion-radio>
+</div>
+
+<div class="list padding-vertical">
+  <div class="item item-divider pp-item-divider">
+    Who is in charge of taking?
+    <span ng-show="showError && frmAddEditEntry.taking.$invalid">
+         <i class="icon ion-alert-circled error"></i>
+         <span ng-show="frmAddEditEntry.taking.$error.required">{{ 'MEDICATION_ERR_TAKING' | translate }}</span>
+        </span>
+  </div>
+  <ion-radio name="taking" ng-repeat="taking in incharges" ng-value="taking.key" ng-model="currentEntry.chargetaking" required="required">
+    {{ taking.text | translate }}
+  </ion-radio>
+</div>
+
+<div class="list padding-vertical">
+  <div class="item item-divider pp-item-divider">
+    What help needed? <span ng-show="showError && frmAddEditEntry.help.$invalid">
+         <i class="icon ion-alert-circled error"></i>
+         <span ng-show="frmAddEditEntry.help.$error.required">{{ 'MEDICATION_ERR_HELP' | translate }}</span>
+        </span>
+  </div>
+  <ion-radio name="help" ng-repeat="option in helps" ng-value="option.key" ng-model="currentEntry.help" required="required">
+    {{ option.text | translate }}
+  </ion-radio>
+</div>

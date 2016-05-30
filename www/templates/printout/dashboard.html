@@ -1,0 +1,24 @@
+<ion-view title="{{ 'NAV_PRINTOUT' | translate }}">
+  <ion-content class="has-header">
+    <div class="padding">
+      <h3>Jetzt wird gedruckt!</h3>
+      <p>Für den MDK-Termin benötigen Sie das Pflegeprotokoll ausgedruckt für die Unterlagen des Gutachters. Hier können Sie sich das Pflegeprotokoll als PDF auf Ihre E-Mail-Adresse zuschicken lassen.</p>
+    </div>
+    <ion-item class="item-icon-right" href="#" ui-sref="app.printout.request">
+        Jetzt PDF zum Druck anfordern
+        <i class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+
+    <ion-item class="item-icon-right" href="#" ui-sref="app.printout.archive">
+        Zum Archiv
+        <i class="icon ion-chevron-right icon-accessory"></i>
+     </ion-item>
+
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button class="button button-clear icon ion-filing" ui-sref="app.printout.request"> PDF anfordern</button>
+      <button class="button button-clear icon ion-plus" ui-sref="app.printout.archive"> Archiv</button>
+    </div>
+  </div>
+</ion-view>

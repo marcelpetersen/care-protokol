@@ -1,0 +1,22 @@
+<ion-view title="User Role">
+  <ion-content class="has-header has-subheader has-footer">
+    <ion-list>
+        <div class="padding">
+            <div class="list padding-vertical">
+              <div class="item item-divider pp-item-divider">
+                Change Role of {{user.name}}
+              </div>
+              <ion-radio ng-repeat="role in roles" ng-value="role.title" ng-model="user.role">
+                {{ role.text }}
+              </ion-radio>
+            </div>
+        </div>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button  class="button button-clear icon ion-filing" ui-sref="app.admin.users"> Back </button>
+      <button class="button button-clear icon ion-checkmark" ng-click="save()"> Update</button>
+    </div>
+  </div>
+</ion-view>

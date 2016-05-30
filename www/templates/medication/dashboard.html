@@ -1,0 +1,22 @@
+<ion-view title="{{ 'NAV_MEDICATION' | translate }}">
+  <ion-content class="has-header" ng-controller="MedicationCtrl">
+    <div class="content-pic-start medication">
+    </div>
+    <div class="padding">
+      <h3>Medikamentenplan</h3>
+      <p>Nimmt Ihr Angehöriger Medikamente?</p>
+      <button ng-click="notMedicationRequired()" class="button button-block button-positive pp-button-row">{{ 'MEDICATION_INIT_BUTTON_NOT_REQUIRED' | translate }}</button>
+      <p></p>
+      <p>Um sich einen umfassenden Überblick über den Gesundheitszustand zu verschaffen, braucht der Medizinische Dienst auch Auskünfte über die Medikamente.</p>
+      <p>Hier können Sie alle Medikamente aufnehmen, die regelmäßig eingenommen werden. Und Sie können festhalten, wer die Verantwortung für das Herrichten, für Einnahme und die Anschlussrezepte übernimmt.</p>
+
+    </div>
+
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button class="button button-clear icon ion-filing" ui-sref="app.medication.entries"> {{ 'MEDICATION_INIT_BUTTON_LIST' | translate }}</button>
+      <button class="button button-clear icon ion-plus" ui-sref="app.medication.addentry"> {{ 'MEDICATION_INIT_BUTTON_CREATE' | translate }}</button>
+    </div>
+  </div>
+</ion-view>

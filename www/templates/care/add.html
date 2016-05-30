@@ -1,0 +1,21 @@
+<!--For Add New-->
+<ion-view title="Neuer Eintrag">
+  <div class="bar bar-subheader bar-light">
+    <div class="button-bar">
+      <a class="button button-clear icon ion-chevron-left"></a>
+      <a class="button button-clear"><strong>{{newEntry.date | date:'EEEE'}}</strong></a>
+      <a class="button button-clear icon ion-chevron-right"></a>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader has-footer">
+    <ion-nav-view name="formtest" animation="slide-in-up"></ion-nav-view>
+    <div ui-view="form"></div>.
+    <p>new entry: {{newEntry}}</p>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button type="submit" ng-disabled="!allowSave" class="button button-clear icon ion-checkmark" ng-click="save(newEntry)"> Speichern</button>
+      <button class="button button-clear icon ion-close-circled" ui-sref="app.care.dashboard"> Abbrechen</button>
+    </div>
+  </div>
+</ion-view>

@@ -1,0 +1,20 @@
+<ion-view title="Neuer Eintrag">
+  <ion-content class="has-header has-subheader has-footer">
+  <ion-list>
+    <ion-item class="item-divider pp-item-divider">
+      {{'APP_DIFFICULTIES' | translate}}
+    </ion-item>
+    <ion-item class="item-icon-right" ng-repeat="difficulty in difficulties" ng-click="selectDifficulty(difficulty)">
+      {{difficulty.title}}
+      <i class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+  </ion-list>
+
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <button type="submit" ng-disabled="!allowSave" class="button button-clear icon ion-checkmark" ng-click="save(newEntry)"> Speichern</button>
+      <button class="button button-clear icon ion-close-circled" ui-sref="app.care.difficulties"> Abbrechen</button>
+    </div>
+  </div>
+</ion-view>

@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'ppicons';
+  src:url('../fonts/ppicons.eot?par2ji');
+  src:url('../fonts/ppicons.eot?#iefixpar2ji') format('embedded-opentype'),
+  url('../fonts/ppicons.woff?par2ji') format('woff'),
+  url('../fonts/ppicons.ttf?par2ji') format('truetype'),
+  url('../fonts/ppicons.svg?par2ji#ppicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="pp-icon-"], [class*=" pp-icon-"] {
+  font-family: 'ppicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category-body:before {
+  content: "\e600";
+}
+.icon-category-body-o:before {
+  content: "\e601";
+}
+.icon-category-mobility:before {
+  content: "\e602";
+}
+.icon-category-mobility-o:before {
+  content: "\e603";
+}
+.icon-category-nutrition:before {
+  content: "\e604";
+}
+.icon-category-nutrition-o:before {
+  content: "\e605";
+}
+.icon-category-household:before {
+  content: "\e606";
+}
+.icon-category-household-o:before {
+  content: "\e607";
+}
+
+.pp-video-container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.pp-video-container iframe,
+.pp-video-container object,
+.pp-video-container embed,
+.pp-video-container video,{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title-image {
+  vertical-align: middle;
+  margin: 0 6px 0 -6px;
+}
+
+@media screen and (max-width: 360px) {
+  .button-small {
+    padding: 0 10px !important;
+  }
+}
+
+.range-royal .icon.increment {
+  color: #552bdf;
+}
+
+.range-royal .icon.decrement {
+  opacity: 0.5;
+}
+
+.item.pp-item-badge-right .item-content, .item-complex.pp-item-badge-right .item-content {
+  padding-right: 70px;
+}
+
+.item.pp-item-badge-right .item-nohref, .item-complex.pp-item-badge-right .item-nohref {
+  padding-right: 20px;
+}
+
+.item.text-center .item-note {
+  float: none;
+}
+
+.content-pic-splash {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 30%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.content-pic-start {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 30%;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  margin-bottom: 0px;
+}
+
+.content-pic-start.responsive-sm {
+  min-height: 120px;
+}
+
+.content-pic-start.home, .content-pic-splash.home {
+  background-image: url('../img/parental-love-large-ext.jpg');
+}
+.content-pic-start .home-headline {
+  color: #fff;
+}
+
+.content-pic-start.care {
+  background-image: url('../img/bigstock-Helping-Hands-45333739.jpg');
+}
+
+.content-pic-start.category {
+  background-image: url('../img/stock-photo-30004168-gardening-gloves-in-an-apron-pocket.jpg');
+}
+
+.content-pic-start.category.body {
+  background-image: url('../img/Koerperpflege_bigstock-Stack-Of-Colorful-Towels-51607300.jpg');
+}
+.content-pic-start.category.household {
+  background-image: url('../img/Haushalt_bigstock-Washed-Clothes-Drying-Outside-24952190.jpg');
+}
+.content-pic-start.category.mobility {
+  background-image: url('../img/Mobilitaet_bigstock-Brown-leather-men-s-shoes-with-55983194.jpg');
+}
+.content-pic-start.category.nutrition {
+  background-image: url('../img/Nahrungsaufnahme_bigstock-Valentines-Day-Child-Friendly--56773658.jpg');
+}
+
+.content-pic-start.coaching {
+  background-image: url('../img/coach-demenz.jpg');
+}
+
+.content-pic-start.module-first {
+  background-image: url('../img/stock-photo-5929135-using-the-walker.jpg');
+}
+
+.content-pic-start.module-second {
+  background-image: url('../img/bigstock-senior-struggle-2909377.jpg');
+}
+
+.content-pic-start.module-third {
+  background-image: url('../img/stock-photo-5889588-father-s-pride.jpg');
+}
+
+.content-pic-start.medication {
+  background-image: url('../img/iStock_000035040176XLarge.jpg');
+}
+
+.content-pic-start.competency {
+  background-image: url('../img/Alltagskompetenz_bigstock-Senior-Woman-Holding-Hands-Wit-40514572.jpg');
+}
+
+
+.range.pp-range input[type="range"] {
+  /* fix to get same height as row with small buttons in col */
+  height: 36px;
+}
+.item-divider.pp-item-divider {
+  color: #444;
+}
+.pp-row-question {
+  border-color: #b2b2b2;
+  background-color: #f8f8f8;
+  color: #444;
+}
+
+/*  styles for dashboard with larger font and 2 rows */
+
+.pp-item-large .item-content {
+  background-color: #f5f5f5;
+}
+
+.pp-item-large .icon {
+  font-size: 42px;
+}
+
+.item-complex.pp-item-large .item-content {
+  padding-left: 65px;
+}
+
+.pp-item-large {
+  font-size: 24px;
+  min-height: 90px;
+}
+
+.pp-item-large h2{
+  margin-top: 0px;
+  margin-bottom: 3px;
+  color: #444;
+  font-size: 30px;
+}
+
+.pp-item-large .item-note {
+  float: left;
+  color: #888;
+}
+
+.pp-item-large .badge {
+  top: 31px;
+  right: 57px;
+  padding: 6px 10px;
+  font-size: 18px;
+}
+
+.pp-item-large .icon-accessory {
+  right: 10px;
+}
+
+
+/*  styles for dashboard with larger font and 2 rows */
+
+.pp-item-block {
+  background-color: #f5f5f5;
+}
+
+.pp-item-block .icon {
+  font-size: 32px;
+}
+
+.item-complex.pp-item-block .item-content {
+  padding-left: 65px;
+}
+
+.pp-item-block {
+  font-size: 18px;
+  min-height: 50px;
+}
+
+.pp-item-block h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #444;
+  font-size: 22px;
+}
+
+.pp-item-block .item-note {
+  float: left;
+  color: #888;
+}
+
+.pp-item-block .badge {
+  top: 16px;
+  right: 22px;
+  padding: 6px 10px;
+  font-size: 18px;
+}
+
+.pp-item-block.pp-item-divider .badge {
+  right: 32px;
+}
+
+.pp-item-block .badge span {
+  font-size: 11px;
+  margin-top: 2px;
+  padding-left: 2px;
+}
+
+.pp-item-block .icon-accessory {
+  right: 10px;
+}
+
+
+
+.pp-item-active {
+  font-weight: 600;
+}
+
+.item hr {
+  border-style: solid;
+  color: #ddd;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .responsive-md .col, .responsive-md .col-10, .responsive-md .col-20, .responsive-md .col-25, .responsive-md .col-33, .responsive-md .col-34, .responsive-md .col-50, .responsive-md .col-66, .responsive-md .col-67, .responsive-md .col-75, .responsive-md .col-80, .responsive-md .col-90 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 567px) {
+  .responsive-sm .col, .responsive-sm .col-10, .responsive-sm .col-20, .responsive-sm .col-25, .responsive-sm .col-33, .responsive-sm .col-34, .responsive-sm .col-50, .responsive-sm .col-66, .responsive-sm .col-67, .responsive-sm .col-75, .responsive-sm .col-80, .responsive-sm .col-90 {
+    margin-bottom: 0px;
+  }
+}
+
+
+
+.pp-icon-2x {
+  font-size: 200%;
+}
+
+.pp-icon-3x {
+  font-size: 300%;
+}
+
+.button-block.pp-button-row {
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+.pp-row {
+  padding: 0px;
+}
+
+.svg-frame {
+  position: relative;
+  display:inline-block;
+  vertical-align: middle;
+/*  overflow:hidden;*/
+
+}
+
+.svg-frame svg {
+  max-height: 40%;
+  max-width: 40%;
+  min-height: 200px;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.selected-date {
+  padding: 10px;
+  text-align: center;
+}
+
+.my-item {
+  left: 0;
+  right: 0;
+}
+
+.recent-added a {
+    color: #4bff89;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.recent-update a {
+    color: #ff7823;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+
+}
+
+.recent-remove, .recent-remove .item-divider {
+    background-color: #ff8784;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+div#delNotify {
+    display: none;
+    color: #FFFFFF;
+}
+
+.rewards img.houseitem {
+  height:100%;
+  width:auto;
+}
+
+
+.row.row-footer {
+  position: absolute;
+  bottom: 0px;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+}

@@ -1,0 +1,59 @@
+<!--For Entries-->
+<ion-view title="{{activity.title}}">
+  <div class="bar bar-subheader bar-light">
+    <div class="button-bar">
+      <a class="button button-clear icon ion-chevron-left"></a>
+      <a class="button button-clear"><strong>{{activity.entries[0].datetime | date:'EEEE'}}</strong></a>
+      <a class="button button-clear icon ion-chevron-right"></a>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader has-footer">
+    <ion-refresher
+        pulling-text="Pull to refresh..."
+        on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list>
+      <ion-item class="item-divider text-center">
+        Vormittag
+      </ion-item>
+      <ion-item class="item-icon-right pp-item-badge-right" ng-repeat="entry in activity.entries | filter:{dayslice:'VM'} " href="#" ui-sref="app.care.entrydetail({activityId: activity.id, entryId: entry.id})">
+        {{getActivityEntryText(entry)}}
+        <span class="item-note">{{entry.user}}</span>
+        <span class="badge badge-positive">{{entry.minutes}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-divider  text-center">
+        Mittag
+      </ion-item>
+      <ion-item class="item-icon-right pp-item-badge-right" ng-repeat="entry in activity.entries | filter:{dayslice:'MI'} " href="#" ui-sref="app.care.entrydetail({activityId: activity.id, entryId: entry.id})">
+        {{getActivityEntryText(entry)}}
+        <span class="item-note">{{entry.user}}</span>
+        <span class="badge badge-positive">{{entry.minutes}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-divider text-center">
+        Abend
+      </ion-item>
+      <ion-item class="item-icon-right pp-item-badge-right" ng-repeat="entry in activity.entries | filter:{dayslice:'AB'} " href="#" ui-sref="app.care.entrydetail({activityId: activity.id, entryId: entry.id})">
+        {{getActivityEntryText(entry)}}
+        <span class="item-note">{{entry.user}}</span>
+        <span class="badge badge-positive">{{entry.minutes}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-divider text-center">
+        Nacht
+      </ion-item>
+      <ion-item class="item-icon-right pp-item-badge-right" ng-repeat="entry in activity.entries | filter:{dayslice:'NA'} " href="#" ui-sref="app.care.entrydetail({activityId: activity.id, entryId: entry.id})">
+        {{getActivityEntryText(entry)}}
+        <span class="item-note">{{entry.user}}</span>
+        <span class="badge badge-positive">{{entry.minutes}}</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+    <div class="button-bar">
+      <a class="button button-clear icon ion-plus" ui-sref="app.care.addentry({activityId: activity.id})"> Neuer Eintrag</a>
+    </div>
+  </div>
+</ion-view>

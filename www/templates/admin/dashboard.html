@@ -1,0 +1,114 @@
+<ion-view title="{{ 'NAV_ADMIN' | translate }}">
+  <ion-content class="has-header" ng-controller="AdminCtrl">
+    <div class="padding">
+      <h3>Development AID</h3>
+    </div>
+
+	  <div class="row responsive-sm">
+      <div class="col col-34"><button ng-click="removeData()" class="button button-block button-positive pp-button-row">Remove data</button></div>
+      <div class="col col-66"><p><small>Remove answers for development</small></p></div>
+    </div>
+
+    <div class="row responsive-sm">
+          <div class="col col-34"><button ng-click="removeCareData()" class="button button-block button-positive pp-button-row">Remove care data</button></div>
+          <div class="col col-66"><p><small>Remove Care entries</small></p></div>
+        </div>
+
+    <div class="row responsive-sm">
+      <div class="col col-34"><button ng-click="popDate=true" class="button button-block button-positive pp-button-row">Add Care entry</button></div>
+      <div class="col col-66" ng-show="popDate">
+        <p><datetimepicker ng-model="caredate" datetimepicker-config="{ startView:'day', minView:'day' }" /></p>
+        <p><button ng-click="createCareEntry()" class="button button-block button-positive pp-button-row">Create Data</button></p>
+     </div>
+    </div>
+    <div class="row responsive-sm">
+      <div class="col col-34"><button ng-click="openCordovaDate()" class="button button-block button-positive pp-button-row">Cordova Datepicker (pending)</button></div>
+       <div class="col col-66"><p><small>Cordova Datepicker</small></p></div>
+    </div>
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="angulardate=true" class="button button-block button-positive pp-button-row">Angular Datepicker</button></div>
+        <div class="col col-66" ng-show="angulardate"><a ng-click="showandt=true">{{ data.date | date:'dd/MM/yyyy' }} click here</a>
+          <p ng-show="showandt" ng-click="showandt=null"><datetimepicker ng-model="data.date" datetimepicker-config="{ startView:'day', minView:'day' }" /></p>
+        </div>
+    </div>
+
+    <div class="row responsive-sm">
+            <div class="col col-34"><button ng-click="pickdate=true" class="button button-block button-positive pp-button-row">restorando Datepicker</button></div>
+            <div class="col col-66" ng-show="pickdate">
+              <div style="width: 300px">
+                <div pickadate ng-model="date" min-date="minDate" max-date="maxDate" disabled-dates='disabledDates'></div>
+                <div class="selected-date">
+                  Selected date is {{date || '(no date selected)'}}
+                </div>
+              </div>
+            </div>
+        </div>
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="ionicdate=true" class="button button-block button-positive pp-button-row">Ionic Datepicker</button></div>
+        <div class="col col-66" ng-show="ionicdate">
+          <label class="item item-input" ng-click="openDate()">
+            <span class="input-label">Date</span>
+            <input type="text" ng-model="data.formattedDate">
+          </label>
+        </div>
+    </div>
+    <div class="row responsive-sm">
+          <button ng-show="$root.canShareViaFacebook" class="button button-block button-positive" ng-click="shareViaFacebook('Demo facebook share', 'www/img/puppy.png', null)">Facebook (share)</button>
+     </div>
+    <div class="row responsive-sm">
+          <button ng-show="$root.canShareViaTwitter" class="button button-block button-positive" ng-click="shareViaTwitter('Demo Twitter share', 'www/img/puppy.png', null)">Twitter (share)</button>
+    </div>
+    <div class="row responsive-sm">
+          <button ng-show="$root.canShare" class="button button-block button-positive" ng-click="share('Demo file share', 'Puppy', 'www/img/puppy.png', null)">Share PDF</button>
+     </div>
+    <div class="row responsive-sm">
+          <button ng-show="$root.canShareViaSms" class="button button-block button-positive" ng-click="shareViaSMS('SMS', '09198319211152')">Share via SMS</button>
+      </div>
+    <div class="row responsive-sm">
+        <button ng-show="$root.canShareViaWhatsapp" class="button button-block button-positive" ng-click="shareViaWhatsapp('whatsapp', '09198319211152')">Share via Whatsapp</button>
+     </div>
+    <div class="row responsive-sm">
+        <div class="col col-34"><button class="button button-block button-positive pp-button-row" ui-sref="app.admin.users">Assign Role</button></div>
+    </div>
+
+     <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="checkVariousCareLevels()" class="button button-block button-positive pp-button-row">Check for various scenarios, using Care Level Basis!!</button></div>
+    </div>
+
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="checkCareLevel0()" class="button button-block button-positive pp-button-row">Check for various Care level-0!!</button></div>
+    </div>
+
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="checkCareLevel1()" class="button button-block button-positive pp-button-row">Check for various Care level-1!!</button></div>
+    </div>
+
+
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="checkCareLevel2()" class="button button-block button-positive pp-button-row">Check for various Care level-2!!</button></div>
+    </div>
+
+    <div class="row responsive-sm">
+        <div class="col col-34"><button ng-click="checkCareLevel3()" class="button button-block button-positive pp-button-row">Check for various Care level-3!!</button></div>
+    </div>
+
+
+    <div class="row responsive-sm">
+        <div class="col col-34"><button class="button button-block button-positive pp-button-row" ui-sref="app.admin.competency-ans">Sort competency answer options</button></div>
+    </div>
+
+  </ion-content>
+</ion-view>
+
+<script id="modal.admin.date.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar class="bar-calm">
+      <h1 class="title">Date</h1>
+    </ion-header-bar>
+		<ion-content>
+      <div class="padding">
+        <datetimepicker ng-model="tmp.newDate" datetimepicker-config="{ startView:'day', minView:'day' }" />
+      </div>
+		</ion-content>
+  </ion-modal-view>
+</script>

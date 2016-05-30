@@ -1,0 +1,44 @@
+<ion-view title="Nutzerprofil">
+  <ion-content class="has-header">
+
+      <div class="row">
+        <div class="col">
+          Email:
+        </div>
+        <div class="col">
+          {{user.email}}
+        </div>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="logout()">Abmelden</button>
+        <h4>Passwort ändern</h4>
+
+        <label>
+          <span>Altes Passwort:</span>
+          <input type="password" ng-keypress="reset()" ng-model="user.oldpass"/>
+        </label>
+
+        <label>
+          <span>Neues Passwort:</span>
+          <input type="password" ng-keypress="reset()" ng-model="user.newpass"/>
+        </label>
+
+        <label>
+          <span>Passwort bestätigen:</span>
+          <input type="password" ng-keypress="reset()" ng-model="user.confirm"/>
+        </label>
+
+        <button class="button" ng-click="updatePassword()">Passwort ändern</button>
+
+        <div ng-show="err" class="item item-divider text-center assertive">{{err}}</div>
+        <div ng-show="msg" class="item item-divider text-center balanced">{{msg}}</div>
+
+
+    </div>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+      <div class="button-bar">
+        <button  class="button button-clear icon ion-filing" ui-sref="app.account.families"> Families</button>
+      </div>
+    </div>
+</ion-view>

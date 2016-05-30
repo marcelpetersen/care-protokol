@@ -1,0 +1,42 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "care": {
+      ".read": true,
+      ".write": true
+    },
+    "competency": {
+      ".read": true,
+      ".write": true
+    },
+    "families": {
+      ".read": "root.child('users').hasChild(auth.uid)",
+      ".write": "root.child('users').hasChild(auth.uid)",
+      "$family": {
+        ".read": "data.child('users').child(auth.uid).val() == true",
+        ".write": "data.child('users').child(auth.uid).val() == true"
+      }
+    },
+    "users": {
+         "$user": {
+            ".read": "auth.uid === $user",
+            ".write": "auth.uid === $user",
+            "families": {
+              ".read": "auth.uid === $user",
+              ".write": "auth.uid === $user"
+            },
+            "name": {
+               ".validate": "newData.isString() && newData.val().length <= 2000"
+            },
+            "email": {
+               ".validate": "newData.isString() && newData.val().length <= 2000"
+            },
+            "$other": {
+               ".validate": false
+            }
+         }
+      }
+  }
+
+}

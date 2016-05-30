@@ -1,0 +1,41 @@
+<ion-view title="Alle Kategorien">
+  <ion-content class="has-header">
+    <div class="content-pic-start category">
+    </div>
+    <div class="padding row">
+      <div class="col col-10"><i class="icon pp-icon-2x ion-information-circled energized"></i></div>
+      <div class="col col-90"><p> Alle Hilfsaktivitäten werden im Pflegeprotokoll in Kategorien eingeteilt. Bei der Einstufung in eine
+        Pflegestufe wird für jede Kategorie geprüft, wieviel Zeit insgesamt pro Tag benötigt wird.</p></div>
+    </div>
+    <ion-list>
+      <ion-item class="item-divider pp-item-divider">
+        {{'APP_CATEGORIES' | translate}}
+      </ion-item>
+      <ion-item class="item-icon-right" ng-repeat="category in categories" href="#" ui-sref="app.care.category({categoryId: category.$id})">
+        {{category.title}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+    <div class="padding"></div>
+    <ion-list>
+      <ion-item class="item-divider pp-item-divider">
+        Schnellzugriff
+      </ion-item>
+      <ion-item class="item-icon-right" href="#" ui-sref="app.care.favorites">
+        Ihre Favoriten
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" href="#" ui-sref="app.home">
+        Zuletzt genutzt
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+    <div class="padding">
+      <div ng-show="showDemo">
+        <img src="img/puppy.png" style="width: 80px; float: left;"/>
+        <h4 style="line-height: 25px;">Ups, erwischt! <br>Wir haben für diesen Link im Demo-Modus noch keine Inhalte.</h4>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
